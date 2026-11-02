@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shiv-deployment.vercel.app/siddhant-sharma/sitemap.xml

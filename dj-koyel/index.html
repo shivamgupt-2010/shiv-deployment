@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DJ Koyel | Electronic Music Producer & Club Mashup Artist</title>
+  <meta name="description" content="Official website concept for DJ Koyel (Kolkata): High-energy Bollywood club mashups, tech house, festival EDM, and luxury destination wedding sets. Stream live mixes and book gigs.">
+  <meta name="keywords" content="DJ Koyel, DJ Koyel Kolkata, Female DJ India, Bollywood DJ Kolkata, Club DJ booking, EDM festival DJ India, Wedding DJ artist">
+  <meta name="author" content="DJ Koyel">
+  <link rel="canonical" href="https://shiv-deployment.vercel.app/dj-koyel/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="DJ Koyel | Kolkata Club DJ & Mashup Artist">
+  <meta property="og:description" content="Electric bass, festival drops, and viral Bollywood mashups. Stream mix tapes and book club tours.">
+  <meta property="og:url" content="https://shiv-deployment.vercel.app/dj-koyel/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DJ Koyel | Official DJ Booking">
+  <meta name="twitter:description" content="Drop the bass. Kolkata's dynamic DJ and electronic music producer.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23180033'/><circle cx='50' cy='50' r='30' fill='none' stroke='%23ff2a6d' stroke-width='4'/><text x='50' y='64' font-family='sans-serif' font-size='42' font-weight='900' fill='%2305d9e8' text-anchor='middle'>K</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JSON-LD SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "DJ Koyel",
+    "jobTitle": "DJ, Electronic Music Producer & Mashup Artist",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kolkata",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://www.instagram.com/itskoyel/"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Startup Animation Overlay (<900ms) -->
+  <div id="startup-overlay" class="startup-overlay">
+    <div class="startup-box">
+      <div class="vinyl-spin-anim">
+        <svg viewBox="0 0 120 120" width="100" height="100" class="spin-disc">
+          <circle cx="60" cy="60" r="50" fill="#110524" stroke="#ff2a6d" stroke-width="3" />
+          <circle cx="60" cy="60" r="35" fill="none" stroke="#05d9e8" stroke-dasharray="8 4" stroke-width="2" />
+          <circle cx="60" cy="60" r="14" fill="#ff2a6d" />
+        </svg>
+        <div class="k-mark">K</div>
+      </div>
+      <p class="startup-sub">DJ KOYEL &bull; KOLKATA</p>
+    </div>
+    <button id="skip-intro" class="skip-btn">Skip &rarr;</button>
+  </div>
+
+  <!-- Demo Notice Banner -->
+  <div class="concept-demo-banner" role="alert">
+    <div class="banner-inner">
+      <span class="badge-tag">DJ CONCEPT</span>
+      <span class="banner-text">Independent showcase preview &bull; Not the official site &bull; Gig bookings route via management</span>
+      <button class="banner-close" onclick="this.parentElement.parentElement.remove()">&times;</button>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo">
+        <div class="k-disc-badge">
+          <span>K</span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">DJ KOYEL</span>
+          <span class="brand-tag">PRODUCER &bull; KOLKATA</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#mixes" class="nav-link">Mixes & Sets</a>
+        <a href="#styles" class="nav-link">Sound Styles</a>
+        <a href="#tour" class="nav-link">Club Tour</a>
+        <a href="#booking" class="nav-link">Book Event</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://www.instagram.com/itskoyel/" target="_blank" rel="noopener noreferrer" class="insta-pill">
+          <span>@itskoyel</span>
+        </a>
+        <a href="#booking" class="btn btn-coral btn-sm">Book DJ Set</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="uv-glow"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="club-pill">
+          <span class="neon-dot"></span>
+          <span>KOLKATA &bull; PAN-INDIA TOURING DJ</span>
+        </div>
+        <h1 class="hero-title">
+          TURN UP THE BASS. <br>
+          <span class="text-coral">OWN THE NIGHT.</span>
+        </h1>
+        <p class="hero-desc">
+          High-energy Bollywood club bangers, thunderous tech house drops, and seamless cross-genre festival mashups. Setting dancefloors on fire from Kolkata superclubs to destination wedding sundowners.
+        </p>
+        <div class="hero-ctas">
+          <a href="#mixes" class="btn btn-coral btn-lg">Play Live Club Mix</a>
+          <a href="#booking" class="btn btn-outline-cyan btn-lg">Inquire Gig Dates</a>
+        </div>
+        <div class="hero-specs">
+          <div class="spec-node">
+            <strong>128 BPM</strong>
+            <span>Peak Hour Energy</span>
+          </div>
+          <div class="spec-node">
+            <strong>Pioneer Nexus</strong>
+            <span>4-Deck Mixing</span>
+          </div>
+          <div class="spec-node">
+            <strong>Pan-India</strong>
+            <span>Club & Wedding Tours</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="dj-frame">
+          <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80" alt="DJ Koyel Performing Live at Nightclub" class="hero-img">
+          <div class="deck-hud">
+            <div class="bpm-counter">128.0 BPM</div>
+            <div class="deck-indicator">DECK 01 : ON AIR</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Mix Player -->
+  <section class="section player-section" id="mixes">
+    <div class="container">
+      <div class="mix-box">
+        <div class="mix-head text-center">
+          <span class="sub-tag">LIVE SETS & TAPES</span>
+          <h2>Experience The Live Club Sound</h2>
+          <p>Stream live recorded sets directly from superclub consoles.</p>
+        </div>
+
+        <div class="mix-player-grid">
+          <div class="turntable-panel">
+            <div class="turntable-sim">
+              <div class="vinyl-platter" id="vinylPlatter">
+                <div class="platter-label">KOYEL</div>
+              </div>
+              <div class="tonearm" id="tonearm"></div>
+            </div>
+            <div class="now-playing-meta">
+              <h3 id="currentMixTitle">Bollywood Festival Mashup Vol. 8</h3>
+              <p id="currentMixGenre">Commercial EDM &bull; 128 BPM</p>
+            </div>
+            <div class="mix-controls">
+              <button class="dj-play-btn" id="djPlayBtn" onclick="toggleDjPlay()">&#9658;</button>
+              <div class="mix-wave">
+                <div class="mix-progress" id="mixProg"></div>
+              </div>
+              <span class="mix-time" id="mixTime">24:15</span>
+            </div>
+          </div>
+
+          <div class="mix-playlist">
+            <div class="mix-item active" onclick="selectMix(0, 'Bollywood Festival Mashup Vol. 8', 'Commercial EDM • 128 BPM', '24:15', this)">
+              <span class="m-idx">&#9658;</span>
+              <div class="m-desc">
+                <h4>Bollywood Festival Mashup Vol. 8</h4>
+                <span>Peak hour club anthems with bass drops</span>
+              </div>
+              <span class="m-dur">24:15</span>
+            </div>
+
+            <div class="mix-item" onclick="selectMix(1, 'Tech House Sundowner Live Set', 'Deep Tech • Afro Grooves', '32:40', this)">
+              <span class="m-idx">&#9658;</span>
+              <div class="m-desc">
+                <h4>Tech House Sundowner Live Set</h4>
+                <span>Sunset vibes recorded live at Goa beach club</span>
+              </div>
+              <span class="m-dur">32:40</span>
+            </div>
+
+            <div class="mix-item" onclick="selectMix(2, 'Punjabi Dhol Bass Explosion', 'Desi Bass • Hard Trap', '18:50', this)">
+              <span class="m-idx">&#9658;</span>
+              <div class="m-desc">
+                <h4>Punjabi Dhol Bass Explosion</h4>
+                <span>Heavy sub-bass kicks & live dhol rhythms</span>
+              </div>
+              <span class="m-dur">18:50</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sound Styles -->
+  <section class="section styles-section" id="styles">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="sub-tag">VERSATILITY</span>
+        <h2>Curated Set Styles</h2>
+        <p>Custom tailored musical journeys for diverse crowd profiles.</p>
+      </div>
+
+      <div class="styles-grid">
+        <div class="style-card">
+          <div class="s-icon">&#128261;</div>
+          <h3>Bollywood Club Mashups</h3>
+          <p>High-energy remixed anthems, nostalgic 90s-2000s hooks fused with modern Melbourne bounce and EDM drops.</p>
+        </div>
+
+        <div class="style-card">
+          <div class="s-icon">&#127774;</div>
+          <h3>Sundowner & Afro Tech</h3>
+          <p>Smooth melodic house, tribal percussion, and groovy basslines for luxury poolside sessions and rooftop lounges.</p>
+        </div>
+
+        <div class="style-card">
+          <div class="s-icon">&#127878;</div>
+          <h3>Royal Destination Weddings</h3>
+          <p>Elite Sangeet and after-party curations that keep three generations dancing till 5 in the morning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gig Calendar & Booking Form -->
+  <section class="section booking-section" id="booking">
+    <div class="container">
+      <div class="book-card">
+        <div class="book-head text-center">
+          <span class="sub-tag">BOOKING & TOURS</span>
+          <h2>Book DJ Koyel For Your Event</h2>
+          <p>Direct management inquiry for nightclubs, corporate galas, college festivals, and wedding celebrations.</p>
+        </div>
+
+        <form class="book-form" id="djBookForm" onsubmit="event.preventDefault(); submitDjBooking();">
+          <div class="b-row">
+            <div class="b-col">
+              <label for="djClient">Client / Venue Name</label>
+              <input type="text" id="djClient" class="b-ctrl" placeholder="e.g. Club Mirage / Wedding Planner" required>
+            </div>
+            <div class="b-col">
+              <label for="djEvent">Event Category</label>
+              <select id="djEvent" class="b-ctrl">
+                <option value="Nightclub Headline Set">Nightclub Headline Set</option>
+                <option value="Destination Wedding Sangeet / Afterparty">Destination Wedding Sangeet / Afterparty</option>
+                <option value="College Festival / EDM Arena">College Festival / EDM Arena</option>
+                <option value="Corporate Celebration / Gala">Corporate Celebration / Gala</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="b-row">
+            <div class="b-col">
+              <label for="djCity">Event City & Venue</label>
+              <input type="text" id="djCity" class="b-ctrl" placeholder="e.g. Kolkata, Goa, Mumbai, Jaipur" required>
+            </div>
+            <div class="b-col">
+              <label for="djDate">Event Date</label>
+              <input type="date" id="djDate" class="b-ctrl" required>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-coral btn-lg">Send Inquiry via WhatsApp &rarr;</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-name">DJ KOYEL</div>
+        <p class="foot-desc">Electronic music producer, mashup creator & superclub DJ based in Kolkata, India.</p>
+        <p class="copy">&copy; <span id="year">2026</span> DJ Koyel. Independent Concept Showcase.</p>
+      </div>
+      <div>
+        <h4>Directory</h4>
+        <ul class="foot-links">
+          <li><a href="#mixes">Live Mix Tapes</a></li>
+          <li><a href="#styles">Set Styles</a></li>
+          <li><a href="#booking">Gig Booking</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Concept Disclaimer</h4>
+        <p class="disc">
+          Independent concept website created by SHIV Web Studio for demonstration purposes. Direct inquiries route to the artist's bookings channel.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

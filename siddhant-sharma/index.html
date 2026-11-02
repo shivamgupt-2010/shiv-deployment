@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siddhant Sharma (Classic Kid Sid) | Indie Rock Artist & Composer</title>
+  <meta name="description" content="Official website concept for Siddhant Sharma (Classic Kid Sid): Indie rock vocalist, composer and guitarist. Stream original rock tracks, explore tour dates, merch preview, and festival bookings.">
+  <meta name="keywords" content="Siddhant Sharma, Classic Kid Sid, Indian rock singer, Indie rock India, Classic Kid Sid music, Rock guitarist composer, Indian rock tour">
+  <meta name="author" content="Siddhant Sharma">
+  <link rel="canonical" href="https://shiv-deployment.vercel.app/siddhant-sharma/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Siddhant Sharma (Classic Kid Sid) | Rock Artist">
+  <meta property="og:description" content="High-voltage rock riffs, raw vocal grit, and live show tours. Stream latest EP now.">
+  <meta property="og:url" content="https://shiv-deployment.vercel.app/siddhant-sharma/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Classic Kid Sid | Rock Artist Portfolio">
+  <meta name="twitter:description" content="Raw riffs. Electric grit. Indie rock made loud.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 10 L85 35 L70 90 L30 90 L15 35 Z' fill='%23dc2626'/><text x='50' y='65' font-family='Impact, sans-serif' font-size='42' font-weight='bold' fill='%23ffffff' text-anchor='middle'>S</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JSON-LD SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Siddhant Sharma",
+    "alternateName": "Classic Kid Sid",
+    "jobTitle": "Singer-Songwriter, Composer, Rock Artist",
+    "image": "https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?auto=format&fit=crop&w=1200&q=80",
+    "sameAs": [
+      "https://www.instagram.com/siddhant_sharma.music/"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Startup Animation Overlay (<900ms) -->
+  <div id="startup-overlay" class="startup-overlay">
+    <div class="startup-box">
+      <div class="guitar-pick-anim">
+        <svg viewBox="0 0 120 120" width="100" height="100">
+          <path d="M 60 15 C 85 15, 105 35, 95 65 C 85 95, 60 110, 60 110 C 60 110, 35 95, 25 65 C 15 35, 35 15, 60 15 Z" class="pick-path" />
+          <text x="60" y="70" class="pick-s">S</text>
+        </svg>
+      </div>
+      <p class="startup-sub">CLASSIC KID SID &bull; ROCK</p>
+    </div>
+    <button id="skip-intro" class="skip-btn">Skip &rarr;</button>
+  </div>
+
+  <!-- Demo Disclaimer Banner -->
+  <div class="concept-demo-banner" role="alert">
+    <div class="banner-inner">
+      <span class="badge-tag">ARTIST DEMO</span>
+      <span class="banner-text">Independent showcase preview &bull; Not the official site &bull; Tour booking via management</span>
+      <button class="banner-close" onclick="this.parentElement.parentElement.remove()">&times;</button>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo">
+        <div class="pick-logo-badge">
+          <span>S</span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">SIDDHANT SHARMA</span>
+          <span class="brand-tag">CLASSIC KID SID &bull; ROCK</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#music" class="nav-link">Audio Vault</a>
+        <a href="#tour" class="nav-link">Tour Dates</a>
+        <a href="#merch" class="nav-link">Merch Preview</a>
+        <a href="#gallery" class="nav-link">Live Moments</a>
+        <a href="#booking" class="nav-link">Booking</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://www.instagram.com/siddhant_sharma.music/" target="_blank" rel="noopener noreferrer" class="insta-pill">
+          <span>@siddhant_sharma.music</span>
+        </a>
+        <a href="#tour" class="btn btn-crimson btn-sm">Tour Passes</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="stage-blood-glow"></div>
+    <div class="container hero-grid">
+      <div class="hero-info">
+        <div class="rock-tag">
+          <span class="red-dot"></span>
+          <span>INDIE ROCK &bull; GUITAR ALTERNATIVE</span>
+        </div>
+        <h1 class="hero-title">
+          RAW RIFFS. <br>
+          <span class="text-crimson">ELECTRIC ENERGY.</span>
+        </h1>
+        <p class="hero-desc">
+          High-octane guitars, unapologetic lyricism, and stage presence that rips through speakers. Siddhant Sharma (Classic Kid Sid) channels modern rock grit with arena anthems.
+        </p>
+        <div class="hero-ctas">
+          <a href="#music" class="btn btn-crimson btn-lg">Play Featured Tracks</a>
+          <a href="#tour" class="btn btn-outline-white btn-lg">2026-2027 Tour Dates</a>
+        </div>
+        <div class="hero-metrics">
+          <div class="metric">
+            <strong>120+</strong>
+            <span>Live Stage Sets</span>
+          </div>
+          <div class="metric">
+            <strong>Original EP</strong>
+            <span>"Echoes in the Static"</span>
+          </div>
+          <div class="metric">
+            <strong>Custom Fenders</strong>
+            <span>Lead & Rhythm</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="rock-frame">
+          <img src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?auto=format&fit=crop&w=800&q=80" alt="Siddhant Sharma Classic Kid Sid Live on Stage" class="hero-img">
+          <div class="amp-status-badge">
+            <span class="amp-light"></span>
+            <div>
+              <strong>MARSHALL HIGH GAIN : ON</strong>
+              <small>Now Streaming Debut Singles</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Music Vault Player -->
+  <section class="section music-section" id="music">
+    <div class="container">
+      <div class="vault-card">
+        <div class="vault-head text-center">
+          <span class="sub-tag">THE SOUND VAULT</span>
+          <h2>Heavy Distortion & Anthemic Chords</h2>
+          <p>Stream high-energy studio cuts from the debut vault.</p>
+        </div>
+
+        <div class="vault-player-layout">
+          <div class="player-panel">
+            <div class="vinyl-sleeve">
+              <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80" alt="Rock EP Cover" class="sleeve-img">
+            </div>
+            <div class="player-meta">
+              <h3 id="currentRockTrack">Rogue Frequency (Overdrive Cut)</h3>
+              <p>Classic Kid Sid &bull; High Energy Rock</p>
+            </div>
+            <div class="audio-control-bar">
+              <button class="rock-play-btn" id="rockPlayBtn" onclick="toggleRockPlay()">&#9658;</button>
+              <div class="meter-bar">
+                <div class="meter-fill" id="rockProgress"></div>
+              </div>
+              <span class="time-lbl" id="rockTime">03:22</span>
+            </div>
+          </div>
+
+          <div class="tracks-list">
+            <div class="rock-track-row active" onclick="changeRockTrack(0, 'Rogue Frequency (Overdrive Cut)', '03:22', this)">
+              <span class="r-idx">01</span>
+              <div class="r-info">
+                <h4>Rogue Frequency</h4>
+                <span>Heavy distortion intro with driving drum tempo</span>
+              </div>
+              <span class="r-time">03:22</span>
+            </div>
+
+            <div class="rock-track-row" onclick="changeRockTrack(1, 'Neon Alleyways (Alt Rock)', '04:10', this)">
+              <span class="r-idx">02</span>
+              <div class="r-info">
+                <h4>Neon Alleyways</h4>
+                <span>Atmospheric indie rock with soaring chorus</span>
+              </div>
+              <span class="r-time">04:10</span>
+            </div>
+
+            <div class="rock-track-row" onclick="changeRockTrack(2, 'Midnight Velocity', '03:48', this)">
+              <span class="r-idx">03</span>
+              <div class="r-info">
+                <h4>Midnight Velocity</h4>
+                <span>Fast guitar solos, power chords & anthemic hook</span>
+              </div>
+              <span class="r-time">03:48</span>
+            </div>
+
+            <div class="rock-track-row" onclick="changeRockTrack(3, 'Burn the Script (Acoustic Unplugged)', '03:15', this)">
+              <span class="r-idx">04</span>
+              <div class="r-info">
+                <h4>Burn the Script (Unplugged)</h4>
+                <span>Raw vocal grit over gritty steel-string acoustic</span>
+              </div>
+              <span class="r-time">03:15</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Tour Dates -->
+  <section class="section tour-section" id="tour">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="sub-tag">LIVE DATES</span>
+        <h2>Upcoming Gigs & Festivals</h2>
+        <p>Get in the pit. Experience Classic Kid Sid live on stage.</p>
+      </div>
+
+      <div class="tour-list">
+        <div class="tour-row">
+          <div class="tour-date">
+            <span class="t-month">NOV</span>
+            <span class="t-day">28</span>
+          </div>
+          <div class="tour-city">
+            <h4>Bengaluru Rock Arena</h4>
+            <p>The Underpass Live Stage &bull; 8:00 PM</p>
+          </div>
+          <button class="btn btn-outline-white btn-sm" onclick="rsvpGig('Bengaluru Rock Arena')">RSVP / Passes</button>
+        </div>
+
+        <div class="tour-row">
+          <div class="tour-date">
+            <span class="t-month">DEC</span>
+            <span class="t-day">14</span>
+          </div>
+          <div class="tour-city">
+            <h4>Mumbai Indie Fest</h4>
+            <p>Jio World Garden Stage &bull; 7:30 PM</p>
+          </div>
+          <button class="btn btn-outline-white btn-sm" onclick="rsvpGig('Mumbai Indie Fest')">RSVP / Passes</button>
+        </div>
+
+        <div class="tour-row">
+          <div class="tour-date">
+            <span class="t-month">JAN</span>
+            <span class="t-day">22</span>
+          </div>
+          <div class="tour-city">
+            <h4>New Delhi Youth Summit</h4>
+            <p>IIT Campus Grounds Open Stage &bull; 9:00 PM</p>
+          </div>
+          <button class="btn btn-outline-white btn-sm" onclick="rsvpGig('New Delhi Youth Summit')">RSVP / Passes</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Merch Preview -->
+  <section class="section merch-section" id="merch">
+    <div class="container">
+      <div class="section-head text-center">
+        <span class="sub-tag">OFFICIAL GEAR</span>
+        <h2>Classic Kid Sid Merch Preview</h2>
+      </div>
+
+      <div class="merch-grid">
+        <div class="merch-card">
+          <div class="m-img">
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80" alt="Tour Tee" loading="lazy">
+          </div>
+          <div class="m-content">
+            <h4>Classic Kid Sid Heavy Tour Tee</h4>
+            <p>240 GSM washed cotton with crimson screenprint.</p>
+            <span class="m-price">₹899</span>
+          </div>
+        </div>
+
+        <div class="merch-card">
+          <div class="m-img">
+            <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=80" alt="Rock Hoodie" loading="lazy">
+          </div>
+          <div class="m-content">
+            <h4>Overdrive Heavy Zip Hoodie</h4>
+            <p>Fleece lined with embroidered angular pick logo.</p>
+            <span class="m-price">₹1,799</span>
+          </div>
+        </div>
+
+        <div class="merch-card">
+          <div class="m-img">
+            <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=600&q=80" alt="Guitar Pick Pack" loading="lazy">
+          </div>
+          <div class="m-content">
+            <h4>Custom 1.14mm Tortex Pick Pack</h4>
+            <p>Pack of 6 signature matte grip guitar plectrums.</p>
+            <span class="m-price">₹299</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking / Tour Inquiries -->
+  <section class="section booking-section" id="booking">
+    <div class="container">
+      <div class="book-card">
+        <div class="book-head text-center">
+          <span class="sub-tag">MANAGEMENT</span>
+          <h2>Book Classic Kid Sid For Your Stage</h2>
+          <p>Available for headline rock festivals, college fests, pub headliners, and cross-genre indie collabs.</p>
+        </div>
+
+        <form class="book-form" id="rockBooking" onsubmit="event.preventDefault(); submitRockBooking();">
+          <div class="f-row">
+            <div class="f-col">
+              <label for="orgName">Organizer / Festival Name</label>
+              <input type="text" id="orgName" class="f-in" placeholder="e.g. Underpass Fest / College Gymkhana" required>
+            </div>
+            <div class="f-col">
+              <label for="gigCity">City & Venue</label>
+              <input type="text" id="gigCity" class="f-in" placeholder="e.g. Bangalore, Mumbai, Delhi, Indore" required>
+            </div>
+          </div>
+
+          <div class="f-row">
+            <div class="f-col">
+              <label for="gigDate">Proposed Date</label>
+              <input type="date" id="gigDate" class="f-in" required>
+            </div>
+            <div class="f-col">
+              <label for="setLength">Set Duration</label>
+              <select id="setLength" class="f-in">
+                <option value="60 Mins Power Rock Set">60 Mins Power Rock Set</option>
+                <option value="90 Mins Full Arena Headliner">90 Mins Full Arena Headliner</option>
+                <option value="45 Mins Acoustic Unplugged">45 Mins Acoustic Unplugged</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-crimson btn-lg">Submit Tour Inquiry via WhatsApp &rarr;</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-name">SIDDHANT SHARMA</div>
+        <p class="foot-desc">Classic Kid Sid. Indie rock, guitars, and electric passion.</p>
+        <p class="copy">&copy; <span id="year">2026</span> Siddhant Sharma. Independent Concept Demo.</p>
+      </div>
+      <div>
+        <h4>Direct Links</h4>
+        <ul class="foot-links">
+          <li><a href="#music">Audio Vault</a></li>
+          <li><a href="#tour">Gig Dates</a></li>
+          <li><a href="#merch">Merchandise</a></li>
+          <li><a href="#booking">Tour Inquiries</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Concept Note</h4>
+        <p class="disc">
+          Artist concept showcase engineered by SHIV Web Studio. No client charges or real tickets are issued on this demo website.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

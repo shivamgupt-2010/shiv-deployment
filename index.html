@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHIV Web Studio | Business & Creator Demo Websites Showcase</title>
+  <meta name="description" content="Explore 12 bespoke, mobile-first, high-performance trial websites crafted by SHIV Web Studio for local enterprises and online music creators. Ready for Vercel deployment.">
+  <meta name="keywords" content="SHIV Web Studio, Vercel demo websites, local business website, creator portfolio, Shahdol websites, Burhar, Dhanpuri">
+  <meta name="author" content="SHIV Web Studio">
+  <link rel="canonical" href="https://shiv-deployment.vercel.app/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SHIV Web Studio | Demo Websites Showcase">
+  <meta property="og:description" content="12 ultra-responsive, beautiful trial websites for local businesses and creators. Interactive previews & Vercel ready.">
+  <meta property="og:url" content="https://shiv-deployment.vercel.app/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SHIV Web Studio Demo Showcase">
+  <meta name="twitter:description" content="12 trial websites for local businesses and creators with mobile-first architecture.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%236366f1'/><text x='50' y='68' font-family='sans-serif' font-size='50' font-weight='900' fill='%23ffffff' text-anchor='middle'>S</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JSON-LD SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "SHIV Web Studio Showcase",
+    "url": "https://shiv-deployment.vercel.app/",
+    "description": "Showcase portal for 12 bespoke trial websites developed for local businesses and independent creators."
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <div class="announcement-inner">
+      <span class="pulse-tag">VERCEL READY</span>
+      <span>12 Bespoke Demo Websites Built &bull; Local Businesses & Online Creators &bull; Mobile-First Architecture</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="master-header">
+    <div class="container header-container">
+      <a href="#" class="brand-link">
+        <div class="brand-glyph">S</div>
+        <div class="brand-info">
+          <span class="brand-title">SHIV WEB STUDIO</span>
+          <span class="brand-subtitle">DEMO WEBSITES SHOWCASE</span>
+        </div>
+      </a>
+
+      <div class="header-right">
+        <a href="#prospects" class="btn btn-outline btn-sm">Browse 12 Sites</a>
+        <a href="#deploy-guide" class="btn btn-primary btn-sm">Vercel & SEO Guide</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="master-hero">
+    <div class="hero-glow"></div>
+    <div class="container hero-center text-center">
+      <div class="hero-pill">
+        <span>RESEARCH-BACKED TRIAL SITES &bull; BURHAR &bull; DHANPURI &bull; SHAHDOL &bull; CREATORS</span>
+      </div>
+      <h1 class="hero-main-title">
+        High-Impact Demo Websites <br>
+        <span class="gradient-text">Engineered For Conversion.</span>
+      </h1>
+      <p class="hero-main-sub">
+        Crafted specifically for social-first businesses and independent creators without standalone websites. Each website features custom brand typography, sub-900ms skippable intro animations, live interactive tools, and full local SEO.
+      </p>
+
+      <div class="hero-stats-row">
+        <div class="stat-box">
+          <span class="stat-val">12</span>
+          <span class="stat-lbl">Live Demo Sites</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-val">100%</span>
+          <span class="stat-lbl">Mobile Responsive</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-val">&lt;900ms</span>
+          <span class="stat-lbl">Startup Animations</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-val">SEO</span>
+          <span class="stat-lbl">JSON-LD + OpenGraph</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase Filter & Search Bar -->
+  <section class="filter-section" id="prospects">
+    <div class="container">
+      <div class="filter-bar">
+        <div class="filter-tabs" id="filterTabs">
+          <button class="filter-tab active" data-filter="all">All Websites (12)</button>
+          <button class="filter-tab" data-filter="local">Part A: Local Businesses (5)</button>
+          <button class="filter-tab" data-filter="creator">Part B: Online Creators (7)</button>
+        </div>
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search by name, sector or location..." aria-label="Search demo sites">
+        </div>
+      </div>
+
+      <!-- Websites Showcase Grid -->
+      <div class="cards-grid" id="cardsGrid">
+
+        <!-- Site 1: Galaxy Hair Salon -->
+        <div class="prospect-card" data-category="local" data-name="Galaxy Hair Salon Burhar Shahdol">
+          <div class="card-thumb">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=600&q=80" alt="Galaxy Hair Salon" loading="lazy">
+            <span class="badge-cat local">LOCAL PROSPECT 01</span>
+          </div>
+          <div class="card-info">
+            <div class="card-header">
+              <h3>Galaxy Hair Salon</h3>
+              <span class="loc-tag">Near Atal Dwar, Burhar</span>
+            </div>
+            <p class="card-sector">Luxury Hair & Bridal Makeup Studio</p>
+            <p class="card-summary">
+              GS monogram strand animation, haircut/bridal/keratin service cards, interactive pricing calculator, before-after transformation gallery, and direct WhatsApp booking.
+            </p>
+            <div class="card-palette">
+              <span class="swatch" style="background: #1a1918;" title="Charcoal"></span>
+              <span class="swatch" style="background: #d4af37;" title="Champagne Gold"></span>
+              <span class="swatch" style="background: #d98880;" title="Muted Rose"></span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-primary btn-sm" onclick="openPreview('galaxy-hair-salon/', 'Galaxy Hair Salon & Makeup Studio')">Interactive Preview</button>
+              <a href="galaxy-hair-salon/" target="_blank" class="btn btn-outline btn-sm">Open Fullscreen &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Site 2: DVR Sound & Event -->
+        <div class="prospect-card" data-category="local" data-name="DVR Sound Event DJ Shahdol">
+          <div class="card-thumb">
+            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80" alt="DVR Sound & Event" loading="lazy">
+            <span class="badge-cat local">LOCAL PROSPECT 02</span>
+          </div>
+          <div class="card-info">
+            <div class="card-header">
+              <h3>DVR Sound & Event</h3>
+              <span class="loc-tag">Shahdol, MP</span>
+            </div>
+            <p class="card-sector">Concert Sound, DJ & Stage Production</p>
+            <p class="card-summary">
+              Audio waveform & stage-beam startup animation, Line Array & LED wall packages, live event showcase, and interactive event quote generator.
+            </p>
+            <div class="card-palette">
+              <span class="swatch" style="background: #0a0a0c;" title="Black"></span>
+              <span class="swatch" style="background: #8b5cf6;" title="Electric Violet"></span>
+              <span class="swatch" style="background: #e2e8f0;" title="Chrome"></span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-primary btn-sm" onclick="openPreview('dvr-sound-event/', 'DVR Sound & Event Shahdol')">Interactive Preview</button>
+              <a href="dvr-sound-event/" target="_blank" class="btn btn-outline btn-sm">Open Fullscreen &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Site 3: Fitness Gym 27 -->
+        <div class="prospect-card" data-category="local" data-name="Fitness Gym 27 The Fitness World Dhanpuri">
+          <div class="card-thumb">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80" alt="Fitness Gym 27" loading="lazy">
+            <span class="badge-cat local">LOCAL PROSPECT 03</span>
+          </div>
+          <div class="card-info">
+            <div class="card-header">
+              <h3>Fitness Gym 27</h3>
+              <span class="loc-tag">Ward 2, College Colony, Dhanpuri</span>
+            </div>
+            <p class="card-sector">Performance Gym & Strength Studio</p>
+            <p class="card-summary">
+              Rising barbell FW animation, Olympic equipment tour, membership tiers, interactive BMI & calorie target calculator, and shift timetable.
+            </p>
+            <div class="card-palette">
+              <span class="swatch" style="background: #121417;" title="Graphite"></span>
+              <span class="swatch" style="background: #ccff00;" title="Acid Lime"></span>
+              <span class="swatch" style="background: #ffffff;" title="White"></span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-primary btn-sm" onclick="openPreview('fitness-gym-27/', 'Fitness Gym 27 / The Fitness World')">Interactive Preview</button>
+              <a href="fitness-gym-27/" target="_blank" class="btn btn-outline btn-sm">Open Fullscreen &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Site 4: Jay Ambey Sport's Center -->
+        <div class="prospect-card" data-category="local" data-name="Jay Ambey Sports Center Cricket Football Dhanpuri">
+          <div class="card-thumb">
+            <img src="https://images.unsplash.com/photo-1531415074868-036b1c57e329?auto=format&fit=crop&w=600&q=80" alt="Jay Ambey Sports" loading="lazy">
+            <span class="badge-cat local">LOCAL PROSPECT 04</span>
+          </div>
+          <div class="card-info">
+            <div class="card-header">
+              <h3>Jay Ambey Sport's Center</h3>
+              <span class="loc-tag">Azad Chowk, Dhanpuri</span>
+            </div>
+            <p class="card-sector">Sports Goods & Athletics Retail</p>
+            <p class="card-summary">
+              Fast-moving track JA animation, cricket/football/badminton categories, size/availability stock inquiry popup, and tournament bulk kit support.
+            </p>
+            <div class="card-palette">
+              <span class="swatch" style="background: #0f172a;" title="Navy"></span>
+              <span class="swatch" style="background: #f97316;" title="Bright Orange"></span>
+              <span class="swatch" style="background: #ffffff;" title="White"></span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-primary btn-sm" onclick="openPreview('jay-ambey-sports/', 'Jay Ambey Sport\'s Center')">Interactive Preview</button>
+              <a href="jay-ambey-sports/" target="_blank" class="btn btn-outline btn-sm">Open Fullscreen &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Site 5: Shivansh Bakery -->
+        <div class="prospect-card" data-category="local" data-name="Shivansh Bakery Cake Shop Kiran Talkies Shahdol">
+          <div class="card-thumb">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" alt="Shivansh Bakery" loading="lazy">
+            <span class="badge-cat local">LOCAL PROSPECT 05</span>
+          </div>
+          <div class="card-info">
+            <div class="card-header">
+              <h3>Shivansh Bakery</h3>
+              <span class="loc-tag">Kiran Talkies Tiraha, Shahdol</span>
+            </div>
+            <p class="card-sector">Artisan Bakery & Custom Celebration Cakes</p>
+            <p class="card-summary">
+              Frosting ribbon SB animation, Belgian truffle signature cakes, interactive custom cake tier builder with message preview, and fresh bakes menu.
+            </p>
+            <div class="card-palette">
+              <span class="swatch" style="background: #2b1810;" title="Cocoa"></span>
+              <span class="swatch" style="background: #fff9f2;" title="Cream"></span>
+              <span class="swatch" style="background: #e11d48;" title="Berry"></span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-primary btn-sm" onclick="openPreview('shivansh-bakery/', 'Shivansh Bakery Shahdol')">Interactive Preview</button>
+              <a href="shivansh-bakery/" target="_blank" class="btn btn-outline btn-sm">Open Fullscreen &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Site 6: Romi Mukherjee -->
+        <div class="prospect-card" data-category="creator" data-name="Romi Mukherjee Devotional Indie Music Singer Composer">
+          <div class="card-thumb">
+            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80" alt="Romi Mukherjee" loading="lazy">
+            <span class="badge-cat creator">CREATOR PROSPECT 01</span>
+          </div>
+          <div class="card-info">
+            <div class="card-header">
+              <h3>Romi Mukherjee</h3>
+              <span class="loc-tag">Singer &bull; Composer</span>
+            </div>
+            <p class="card-sector">Devotional & Contemporary Independent Music</p>
+            <p class="card-summary">
+              Melodic RM ligature animation, interactive devotional audio player, live bhajan performance reels, artist bio, and concert booking inquiry.
+            </p>
+            <div class="card-palette">
+              <span class="swatch" style="background: #3a0d14;" title="Deep Maroon"></span>
+              <span class="swatch" style="background: #fdfbf7;" title="Ivory"></span>
+              <span class="swatch" style="background: #d4af37;" title="Muted Gold"></span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-primary btn-sm" onclick="openPreview('romi-mukherjee/', 'Romi Mukherjee Music')">Interactive Preview</button>
+              <a href="romi-mukherjee/" target="_blank" class="btn btn-outline btn-sm">Open Fullscreen &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Site 7: Siddhant Sharma -->
+        <div class="prospect-card" data-category="creator" data-name="Siddhant Sharma Classic Kid Sid Rock Singer Guitarist">
+          <div class="card-thumb">
+            <img src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?auto=format&fit=crop&w=600&q=80" alt="Siddhant Sharma" loading="lazy">
+            <span class="badge-cat creator">CREATOR PROSPECT 02</span>
+          </div>
+          <div class="card-info">
+            <div class="card-header">
+              <h3>Siddhant Sharma</h3>
+              <span class="loc-tag">Classic Kid Sid &bull; Rock</span>
+            </div>
+            <p class="card-sector">Singer-Songwriter & Rock Artist</p>
+            <p class="card-summary">
+              Guitar-pick angular S animation, high-energy rock audio vault player, tour gig calendar with RSVP flow, merch preview, and festival booking.
+            </p>
+            <div class="card-palette">
+              <span class="swatch" style="background: #09090b;" title="Matte Black"></span>
+              <span class="swatch" style="background: #dc2626;" title="Crimson Red"></span>
+              <span class="swatch" style="background: #f5f5f4;" title="Off-White"></span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-primary btn-sm" onclick="openPreview('siddhant-sharma/', 'Siddhant Sharma (Classic Kid Sid)')">Interactive Preview</button>
+              <a href="siddhant-sharma/" target="_blank" class="btn btn-outline btn-sm">Open Fullscreen &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Site 8: Yogi M -->
+        <div class="prospect-card" data-category="creator" data-name="Yogi M Acoustic Singer Songwriter Hindi Indie">
+          <div class="card-thumb">
+            <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=600&q=80" alt="Yogi M" loading="lazy">
+            <span class="badge-cat creator">CREATOR PROSPECT 03</span>
+          </div>
+          <div class="card-info">
+            <div class="card-header">
+              <h3>Yogi M</h3>
+              <span class="loc-tag">Acoustic Singer-Songwriter</span>
+            </div>
+            <p class="card-sector">Fingerstyle Guitarist & Hindi Indie Performer</p>
+            <p class="card-summary">
+              Six-string animated YM reveal, warm organic player with original ballads, curated live show formats (house gigs, cafe sets), and booking form.
+            </p>
+            <div class="card-palette">
+              <span class="swatch" style="background: #e6d5b8;" title="Sand"></span>
+              <span class="swatch" style="background: #163323;" title="Forest Green"></span>
+              <span class="swatch" style="background: #faf7ee;" title="Cream"></span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-primary btn-sm" onclick="openPreview('yogi-m/', 'Yogi M Acoustic Music')">Interactive Preview</button>
+              <a href="yogi-m/" target="_blank" class="btn btn-outline btn-sm">Open Fullscreen &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Site 9: Annkur R Pathakk -->
+        <div class="prospect-card" data-category="creator" data-name="Annkur R Pathakk Music Composer Producer OTT Commercial">
+          <div class="card-thumb">
+            <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=600&q=80" alt="Annkur R Pathakk" loading="lazy">
+            <span class="badge-cat creator">CREATOR PROSPECT 04</span>
+          </div>
+          <div class="card-info">
+            <div class="card-header">
+              <h3>Annkur R Pathakk</h3>
+              <span class="loc-tag">Composer & Producer</span>
+            </div>
+            <p class="card-sector">Contemporary Film & Commercial Music Producer</p>
+            <p class="card-summary">
+              Audio meter rising ARP geometry, interactive multitrack studio stems mixer (vocals, synths, bass), OTT soundtrack showcase, and commission brief form.
+            </p>
+            <div class="card-palette">
+              <span class="swatch" style="background: #0a1128;" title="Midnight Blue"></span>
+              <span class="swatch" style="background: #cbd5e1;" title="Silver"></span>
+              <span class="swatch" style="background: #00f0ff;" title="Cyan"></span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-primary btn-sm" onclick="openPreview('annkur-pathakk/', 'Annkur R Pathakk Studio')">Interactive Preview</button>
+              <a href="annkur-pathakk/" target="_blank" class="btn btn-outline btn-sm">Open Fullscreen &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Site 10: DJ Koyel -->
+        <div class="prospect-card" data-category="creator" data-name="DJ Koyel Kolkata Club Mashup Electronic EDM">
+          <div class="card-thumb">
+            <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80" alt="DJ Koyel" loading="lazy">
+            <span class="badge-cat creator">CREATOR PROSPECT 05</span>
+          </div>
+          <div class="card-info">
+            <div class="card-header">
+              <h3>DJ Koyel</h3>
+              <span class="loc-tag">Kolkata, India</span>
+            </div>
+            <p class="card-sector">DJ, Electronic Producer & Mashup Artist</p>
+            <p class="card-summary">
+              Spinning vinyl disc K monogram animation, live club mix player with animated turntable & BPM HUD, sound styles breakdown, and festival booking.
+            </p>
+            <div class="card-palette">
+              <span class="swatch" style="background: #180033;" title="Ultraviolet"></span>
+              <span class="swatch" style="background: #07070a;" title="Pitch Black"></span>
+              <span class="swatch" style="background: #ff2a6d;" title="Neon Coral"></span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-primary btn-sm" onclick="openPreview('dj-koyel/', 'DJ Koyel Official')">Interactive Preview</button>
+              <a href="dj-koyel/" target="_blank" class="btn btn-outline btn-sm">Open Fullscreen &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Site 11: Shikhar Sinha -->
+        <div class="prospect-card" data-category="creator" data-name="Shikhar Sinha Indie Singer Songwriter Bedroom Pop">
+          <div class="card-thumb">
+            <img src="https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=600&q=80" alt="Shikhar Sinha" loading="lazy">
+            <span class="badge-cat creator">CREATOR PROSPECT 06</span>
+          </div>
+          <div class="card-info">
+            <div class="card-header">
+              <h3>Shikhar Sinha</h3>
+              <span class="loc-tag">Singer & Songwriter</span>
+            </div>
+            <p class="card-sector">Independent Indie & Bedroom Pop Artist</p>
+            <p class="card-summary">
+              Intersecting soundwave SS animation, hero track spotlight player with synchronized lyric highlight card, complete discography, and collab form.
+            </p>
+            <div class="card-palette">
+              <span class="swatch" style="background: #0f172a;" title="Slate"></span>
+              <span class="swatch" style="background: #6366f1;" title="Indigo"></span>
+              <span class="swatch" style="background: #f8fafc;" title="Ivory"></span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-primary btn-sm" onclick="openPreview('shikhar-sinha/', 'Shikhar Sinha Indie Music')">Interactive Preview</button>
+              <a href="shikhar-sinha/" target="_blank" class="btn btn-outline btn-sm">Open Fullscreen &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Site 12: Punya -->
+        <div class="prospect-card" data-category="creator" data-name="Punya Soulful Singer Songwriter Mumbai Indie">
+          <div class="card-thumb">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Punya" loading="lazy">
+            <span class="badge-cat creator">CREATOR PROSPECT 07</span>
+          </div>
+          <div class="card-info">
+            <div class="card-header">
+              <h3>Punya</h3>
+              <span class="loc-tag">Mumbai, India</span>
+            </div>
+            <p class="card-sector">Soulful Singer-Songwriter</p>
+            <p class="card-summary">
+              Continuous vocal curve P animation, acoustic singles player, "Behind the Songs" journal reflections, and live intimate session booking form.
+            </p>
+            <div class="card-palette">
+              <span class="swatch" style="background: #b39ddb;" title="Lavender"></span>
+              <span class="swatch" style="background: #f7f5fa;" title="Pearl"></span>
+              <span class="swatch" style="background: #1a1722;" title="Charcoal"></span>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-primary btn-sm" onclick="openPreview('punya/', 'Punya Soulful Music')">Interactive Preview</button>
+              <a href="punya/" target="_blank" class="btn btn-outline btn-sm">Open Fullscreen &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Device Preview Modal -->
+  <div class="modal-overlay" id="previewModal" aria-hidden="true">
+    <div class="modal-window">
+      <div class="modal-topbar">
+        <div class="modal-title-area">
+          <span class="modal-site-name" id="modalSiteName">Demo Preview</span>
+          <span class="modal-site-url" id="modalSiteUrl">/</span>
+        </div>
+        <div class="device-switchers">
+          <button class="dev-btn active" data-width="390px" title="Mobile Phone (390px)">
+            <span>&#128241; Mobile</span>
+          </button>
+          <button class="dev-btn" data-width="768px" title="Tablet (768px)">
+            <span>&#128187; Tablet</span>
+          </button>
+          <button class="dev-btn" data-width="100%" title="Desktop (100%)">
+            <span>&#128421; Desktop</span>
+          </button>
+        </div>
+        <div class="modal-actions">
+          <a href="#" id="modalExternalLink" target="_blank" class="btn btn-outline btn-sm">Open New Tab &nearr;</a>
+          <button class="close-modal-btn" onclick="closePreview()">&times;</button>
+        </div>
+      </div>
+      <div class="modal-frame-body">
+        <div class="device-viewport" id="deviceViewport" style="width: 390px;">
+          <iframe id="previewIframe" src="about:blank" title="Website Live Preview"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vercel Deployment & SEO Guide Section -->
+  <section class="section guide-section" id="deploy-guide">
+    <div class="container">
+      <div class="guide-box">
+        <div class="guide-head text-center">
+          <span class="sub-pill">DEPLOYMENT ARCHITECTURE</span>
+          <h2>How To Deploy This Entire Studio To Vercel</h2>
+          <p>Zero compilation errors &bull; Zero external build dependencies &bull; Instant global edge CDN distribution</p>
+        </div>
+
+        <div class="guide-steps-grid">
+          <div class="step-card">
+            <div class="step-num">01</div>
+            <h4>Push to GitHub</h4>
+            <p>The code is already structured and pushed directly into your GitHub repository <code>shivamgupt-2010/shiv-deployment</code>.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num">02</div>
+            <h4>Import to Vercel</h4>
+            <p>Go to <a href="https://vercel.com/new" target="_blank" class="text-cyan">vercel.com/new</a>, select <code>shiv-deployment</code>, keep Framework Preset as <strong>Other</strong>, and click <strong>Deploy</strong>.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num">03</div>
+            <h4>All 12 Sites Live!</h4>
+            <p>Your master portal runs at <code>https://your-domain.vercel.app/</code> and each site is accessible at <code>/galaxy-hair-salon/</code>, etc.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num">04</div>
+            <h4>Google Search Console</h4>
+            <p>Upload the generated <code>sitemap.xml</code> into your Google Search Console property for instant indexation of all 12 websites.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="master-footer">
+    <div class="container footer-bottom">
+      <p>&copy; <span id="curYear">2026</span> SHIV Web Studio. High-Performance Mobile-First Web Architecture.</p>
+      <p class="ft-note">Prepared in accordance with the revised social-first prospect research specification.</p>
+    </div>
+  </footer>
+
+  <script src="portal.js"></script>
+</body>
+</html>
