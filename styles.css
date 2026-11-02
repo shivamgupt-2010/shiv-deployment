@@ -189,6 +189,23 @@ h1, h2, h3, h4 {
 }
 
 .btn-sm { padding: 0.45rem 1rem; font-size: 0.8rem; }
+.btn-code {
+  grid-column: span 2;
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: #94a3b8;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+}
+.btn-code:hover {
+  background: #1e293b;
+  border-color: var(--primary);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+.btn-code svg {
+  margin-right: 0.35rem;
+}
 .btn-lg { padding: 0.9rem 2rem; font-size: 1rem; }
 
 /* Hero */

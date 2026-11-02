@@ -20,27 +20,27 @@ In addition, a **Master Showcase Portal (`index.html`)** is provided at the root
 
 ### Part A — Local Prospects (Madhya Pradesh)
 
-| # | Business Name | Sector & City | Directory Path | Theme & Brand Palette |
-|---|---------------|---------------|----------------|-----------------------|
-| 01 | **Galaxy Hair Salon** | Hair Salon & Makeup, Burhar | `/galaxy-hair-salon/` | Charcoal (`#1a1918`), Champagne Gold (`#d4af37`), Muted Rose (`#d98880`) |
-| 02 | **DVR Sound & Event** | Sound, DJ & Stage Production, Shahdol | `/dvr-sound-event/` | Pitch Black (`#0a0a0c`), Electric Violet (`#8b5cf6`), Chrome (`#e2e8f0`) |
-| 03 | **Fitness Gym 27** | Gym & Fitness Studio, Dhanpuri | `/fitness-gym-27/` | Dark Graphite (`#121417`), Acid Lime (`#ccff00`), Pure White (`#ffffff`) |
-| 04 | **Jay Ambey Sport's Center** | Sports Goods Retail, Dhanpuri | `/jay-ambey-sports/` | Deep Navy (`#0f172a`), Bright Orange (`#f97316`), Pure White (`#ffffff`) |
-| 05 | **Shivansh Bakery** | Artisan Bakery & Custom Cakes, Shahdol | `/shivansh-bakery/` | Rich Cocoa (`#2b1810`), Bakery Cream (`#fff9f2`), Berry Pink (`#e11d48`) |
+| # | Business Name | Sector & City | Dedicated GitHub Repository | Theme & Brand Palette |
+|---|---------------|---------------|-----------------------------|-----------------------|
+| 01 | **Galaxy Hair Salon** | Hair Salon & Makeup, Burhar | [`shivamgupt-2010/galaxy-hair-salon`](https://github.com/shivamgupt-2010/galaxy-hair-salon) | Charcoal (`#1a1918`), Champagne Gold (`#d4af37`), Muted Rose (`#d98880`) |
+| 02 | **DVR Sound & Event** | Sound, DJ & Stage Production, Shahdol | [`shivamgupt-2010/dvr-sound-event`](https://github.com/shivamgupt-2010/dvr-sound-event) | Pitch Black (`#0a0a0c`), Electric Violet (`#8b5cf6`), Chrome (`#e2e8f0`) |
+| 03 | **Fitness Gym 27** | Gym & Fitness Studio, Dhanpuri | [`shivamgupt-2010/fitness-gym-27`](https://github.com/shivamgupt-2010/fitness-gym-27) | Dark Graphite (`#121417`), Acid Lime (`#ccff00`), Pure White (`#ffffff`) |
+| 04 | **Jay Ambey Sport's Center** | Sports Goods Retail, Dhanpuri | [`shivamgupt-2010/jay-ambey-sports`](https://github.com/shivamgupt-2010/jay-ambey-sports) | Deep Navy (`#0f172a`), Bright Orange (`#f97316`), Pure White (`#ffffff`) |
+| 05 | **Shivansh Bakery** | Artisan Bakery & Custom Cakes, Shahdol | [`shivamgupt-2010/shivansh-bakery`](https://github.com/shivamgupt-2010/shivansh-bakery) | Rich Cocoa (`#2b1810`), Bakery Cream (`#fff9f2`), Berry Pink (`#e11d48`) |
 
 ---
 
 ### Part B — Online Creators
 
-| # | Creator Name | Sector & Location | Directory Path | Theme & Brand Palette |
-|---|--------------|-------------------|----------------|-----------------------|
-| 06 | **Romi Mukherjee** | Singer / Composer (Devotional & Indie) | `/romi-mukherjee/` | Deep Maroon (`#3a0d14`), Soft Ivory (`#fdfbf7`), Muted Gold (`#d4af37`) |
-| 07 | **Siddhant Sharma** | Classic Kid Sid (Rock Singer-Songwriter) | `/siddhant-sharma/` | Matte Black (`#09090b`), Crimson Red (`#dc2626`), Off-White (`#f5f5f4`) |
-| 08 | **Yogi M** | Singer-Songwriter & Acoustic Guitarist | `/yogi-m/` | Sand (`#e6d5b8`), Forest Green (`#163323`), Soft Cream (`#faf7ee`) |
-| 09 | **Annkur R Pathakk** | Music Composer & Producer (Commercial / OTT) | `/annkur-pathakk/` | Midnight Blue (`#0a1128`), Sleek Silver (`#cbd5e1`), Laser Cyan (`#00f0ff`) |
-| 10 | **DJ Koyel** | DJ / Mashup Producer (Kolkata) | `/dj-koyel/` | Deep Ultraviolet (`#180033`), Pitch Black (`#07070a`), Neon Coral (`#ff2a6d`) |
-| 11 | **Shikhar Sinha** | Indie Bedroom Pop Singer-Songwriter | `/shikhar-sinha/` | Deep Slate (`#0f172a`), Royal Indigo (`#6366f1`), Ivory (`#f8fafc`) |
-| 12 | **Punya** | Soulful Singer-Songwriter (Mumbai) | `/punya/` | Muted Lavender (`#b39ddb`), Luminous Pearl (`#f7f5fa`), Charcoal (`#1a1722`) |
+| # | Creator Name | Sector & Location | Dedicated GitHub Repository | Theme & Brand Palette |
+|---|--------------|-------------------|-----------------------------|-----------------------|
+| 06 | **Romi Mukherjee** | Singer / Composer (Devotional & Indie) | [`shivamgupt-2010/romi-mukherjee`](https://github.com/shivamgupt-2010/romi-mukherjee) | Deep Maroon (`#3a0d14`), Soft Ivory (`#fdfbf7`), Muted Gold (`#d4af37`) |
+| 07 | **Siddhant Sharma** | Classic Kid Sid (Rock Singer-Songwriter) | [`shivamgupt-2010/siddhant-sharma`](https://github.com/shivamgupt-2010/siddhant-sharma) | Matte Black (`#09090b`), Crimson Red (`#dc2626`), Off-White (`#f5f5f4`) |
+| 08 | **Yogi M** | Singer-Songwriter & Acoustic Guitarist | [`shivamgupt-2010/yogi-m`](https://github.com/shivamgupt-2010/yogi-m) | Sand (`#e6d5b8`), Forest Green (`#163323`), Soft Cream (`#faf7ee`) |
+| 09 | **Annkur R Pathakk** | Music Composer & Producer (Commercial / OTT) | [`shivamgupt-2010/annkur-pathakk`](https://github.com/shivamgupt-2010/annkur-pathakk) | Midnight Blue (`#0a1128`), Sleek Silver (`#cbd5e1`), Laser Cyan (`#00f0ff`) |
+| 10 | **DJ Koyel** | DJ / Mashup Producer (Kolkata) | [`shivamgupt-2010/dj-koyel`](https://github.com/shivamgupt-2010/dj-koyel) | Deep Ultraviolet (`#180033`), Pitch Black (`#07070a`), Neon Coral (`#ff2a6d`) |
+| 11 | **Shikhar Sinha** | Indie Bedroom Pop Singer-Songwriter | [`shivamgupt-2010/shikhar-sinha`](https://github.com/shivamgupt-2010/shikhar-sinha) | Deep Slate (`#0f172a`), Royal Indigo (`#6366f1`), Ivory (`#f8fafc`) |
+| 12 | **Punya** | Soulful Singer-Songwriter (Mumbai) | [`shivamgupt-2010/punya`](https://github.com/shivamgupt-2010/punya) | Muted Lavender (`#b39ddb`), Luminous Pearl (`#f7f5fa`), Charcoal (`#1a1722`) |
 
 ---
 
