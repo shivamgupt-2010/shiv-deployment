@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hariyanvi-family-dhaba.vercel.app/sitemap.xml

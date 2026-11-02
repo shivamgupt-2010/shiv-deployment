@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://om-sai-communication.vercel.app/sitemap.xml

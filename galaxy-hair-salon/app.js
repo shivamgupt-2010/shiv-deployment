@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const text = encodeURIComponent(
           `Hello Galaxy Hair Salon Burhar,\nI calculated a package on your website:\n- Services: ${selectedNames.join(', ')}\n- Estimated Total: ₹${total.toLocaleString('en-IN')}\nI would like to check availability for an appointment.`
         );
-        window.open(`https://wa.me/919644764702?text=${text}`, '_blank');
+        window.open(`https://wa.me/916267686575?text=${text}`, '_blank');
       };
     }
   }

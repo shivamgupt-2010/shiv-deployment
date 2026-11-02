@@ -94,12 +94,12 @@ function submitCustomCake() {
     `Hello Shivansh Bakery Shahdol,\n\nI want to place a custom cake order:\n• Flavour: ${flavour}\n• Weight/Size: ${weight}\n• Message on Cake: "${msg}"\n• Required Date: ${date}\n• Estimated Total: ${total}\n\nPlease confirm availability and preparation time.`
   );
 
-  window.open(`https://wa.me/919424353421?text=${orderText}`, '_blank');
+  window.open(`https://wa.me/916267686575?text=${orderText}`, '_blank');
 }
 
 function orderCake(cakeName, size) {
   const orderText = encodeURIComponent(
     `Hello Shivansh Bakery Shahdol,\n\nI would like to order:\n• Cake: ${cakeName}\n• Size: ${size}\n\nPlease let me know when this can be picked up or delivered in Shahdol.`
   );
-  window.open(`https://wa.me/919424353421?text=${orderText}`, '_blank');
+  window.open(`https://wa.me/916267686575?text=${orderText}`, '_blank');
 }

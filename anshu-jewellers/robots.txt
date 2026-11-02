@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anshu-jewellers.vercel.app/sitemap.xml

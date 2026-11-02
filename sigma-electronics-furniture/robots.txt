@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sigma-electronics-furniture.vercel.app/sitemap.xml

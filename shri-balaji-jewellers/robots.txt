@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shri-balaji-jewellers.vercel.app/sitemap.xml

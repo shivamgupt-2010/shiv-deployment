@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://flavors-restaurant.vercel.app/sitemap.xml

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://klassik-furniture.vercel.app/sitemap.xml

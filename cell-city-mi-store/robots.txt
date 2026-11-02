@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cell-city-mi-store.vercel.app/sitemap.xml

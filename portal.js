@@ -1,97 +1,95 @@
-// SHIV Web Studio - Master Showcase Portal Script
-document.addEventListener('DOMContentLoaded', () => {
-  // 1. Year
-  const yearElem = document.getElementById('curYear');
-  if (yearElem) yearElem.textContent = new Date().getFullYear();
+// SHIV Web Studio - Master Showcase Portal Interactive Controller
+let currentCategory = 'all';
 
-  // 2. Filter Tabs
-  const filterTabs = document.querySelectorAll('.filter-tab');
+function setCategoryFilter(cat, btn) {
+  currentCategory = cat;
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  filterProspects();
+}
+
+function filterProspects() {
+  const query = (document.getElementById('prospect-search').value || '').toLowerCase().trim();
   const cards = document.querySelectorAll('.prospect-card');
+  let visibleCount = 0;
 
-  filterTabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      filterTabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-      const filter = tab.getAttribute('data-filter');
-      filterCards(filter);
-    });
+  cards.forEach(card => {
+    const cardCat = card.getAttribute('data-category');
+    const cardData = (card.getAttribute('data-name') || '').toLowerCase();
+    
+    const matchesCat = (currentCategory === 'all') || (cardCat === currentCategory);
+    const matchesQuery = !query || cardData.includes(query);
+
+    if (matchesCat && matchesQuery) {
+      card.style.display = 'flex';
+      visibleCount++;
+    } else {
+      card.style.display = 'none';
+    }
   });
 
-  function filterCards(filterVal) {
-    const query = (document.getElementById('searchInput').value || '').toLowerCase().trim();
-    cards.forEach(card => {
-      const cat = card.getAttribute('data-category');
-      const name = (card.getAttribute('data-name') || '').toLowerCase();
-      const matchCat = filterVal === 'all' || cat === filterVal;
-      const matchQuery = !query || name.includes(query);
-
-      if (matchCat && matchQuery) {
-        card.style.display = 'flex';
-      } else {
-        card.style.display = 'none';
-      }
-    });
+  const countElem = document.getElementById('results-count');
+  if (countElem) {
+    if (visibleCount === 36 && currentCategory === 'all' && !query) {
+      countElem.textContent = 'Showing all 36 websites';
+    } else {
+      countElem.textContent = `Showing ${visibleCount} of 36 websites`;
+    }
   }
+}
 
-  // 3. Search
-  const searchInput = document.getElementById('searchInput');
-  if (searchInput) {
-    searchInput.addEventListener('input', () => {
-      const activeTab = document.querySelector('.filter-tab.active');
-      const filter = activeTab ? activeTab.getAttribute('data-filter') : 'all';
-      filterCards(filter);
-    });
-  }
-
-  // 4. Device Switchers in Modal
-  const devBtns = document.querySelectorAll('.dev-btn');
-  const viewport = document.getElementById('deviceViewport');
-
-  devBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      devBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const width = btn.getAttribute('data-width');
-      if (viewport) {
-        viewport.style.width = width;
-      }
-    });
-  });
-});
-
+// Modal Viewport Controller
 function openPreview(urlPath, siteName) {
-  const modal = document.getElementById('previewModal');
-  const iframe = document.getElementById('previewIframe');
-  const nameElem = document.getElementById('modalSiteName');
-  const urlElem = document.getElementById('modalSiteUrl');
-  const extLink = document.getElementById('modalExternalLink');
+  const modal = document.getElementById('preview-modal');
+  const iframe = document.getElementById('preview-iframe');
+  const titleElem = document.getElementById('preview-title');
+  const extLink = document.getElementById('preview-ext-link');
 
   if (modal && iframe) {
-    if (nameElem) nameElem.textContent = siteName;
-    if (urlElem) urlElem.textContent = `/${urlPath}`;
+    if (titleElem) titleElem.textContent = `${siteName} (Interactive Simulation)`;
     if (extLink) extLink.href = urlPath;
     iframe.src = urlPath;
-    modal.classList.add('open');
-    modal.setAttribute('aria-hidden', 'false');
+    modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
   }
 }
 
 function closePreview() {
-  const modal = document.getElementById('previewModal');
-  const iframe = document.getElementById('previewIframe');
+  const modal = document.getElementById('preview-modal');
+  const iframe = document.getElementById('preview-iframe');
   if (modal) {
-    modal.classList.remove('open');
-    modal.setAttribute('aria-hidden', 'true');
+    modal.style.display = 'none';
     if (iframe) iframe.src = 'about:blank';
     document.body.style.overflow = '';
   }
 }
 
-// Close on backdrop click
+function setViewport(width, btn) {
+  document.querySelectorAll('.vp-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  
+  const wrapper = document.getElementById('iframe-wrapper');
+  if (wrapper) {
+    if (typeof width === 'number') {
+      wrapper.style.width = width + 'px';
+      wrapper.style.maxWidth = '100%';
+    } else {
+      wrapper.style.width = '100%';
+      wrapper.style.maxWidth = '100%';
+    }
+  }
+}
+
+// Close modal on backdrop click or Escape key
 window.addEventListener('click', (e) => {
-  const modal = document.getElementById('previewModal');
+  const modal = document.getElementById('preview-modal');
   if (e.target === modal) {
+    closePreview();
+  }
+});
+
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
     closePreview();
   }
 });

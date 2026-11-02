@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kapil-photography-studio.vercel.app/sitemap.xml

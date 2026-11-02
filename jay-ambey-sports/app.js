@@ -40,5 +40,5 @@ function inquireProduct(productName) {
   const msg = encodeURIComponent(
     `Hello Jay Ambey Sport's Center Dhanpuri,\n\nI am inquiring about:\n• Product: ${productName}\n• Location: MP SH 9A, Imam Bada, Azad Chowk\n\nIs this currently available in stock? What are the available sizes/variants and best price?`
   );
-  window.open(`https://wa.me/919425471879?text=${msg}`, '_blank');
+  window.open(`https://wa.me/916267686575?text=${msg}`, '_blank');
 }
