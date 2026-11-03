@@ -1,8 +1,8 @@
-# SHIV Web Studio — 36 Trial Demo Websites Suite 🌟
+# SHIV Web Studio — 37 Trial Demo Websites Suite 🌟
 
 [![Master Repository](https://img.shields.io/badge/GitHub-shivamgupt--2010%2Fshiv--deployment-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shivamgupt-2010/shiv-deployment)
 [![Vercel Deployment](https://img.shields.io/badge/Vercel-Edge%20Ready-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://shiv-deployment.vercel.app/)
-[![Total Projects](https://img.shields.io/badge/Websites-36%20Active-brightgreen?style=for-the-badge)](#)
+[![Total Projects](https://img.shields.io/badge/Websites-37%20Active-brightgreen?style=for-the-badge)](#)
 [![Tech Stack](https://img.shields.io/badge/Stack-HTML5%20%7C%20CSS3%20%7C%20ES6%20%7C%20JSON--LD-blue?style=for-the-badge)](#)
 [![Lead Contact](https://img.shields.io/badge/WhatsApp-%2B91%206267686575-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/916267686575?text=I%20saw%20the%20demo%20website%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV)
 
@@ -24,7 +24,7 @@ Experience the entire 36-website suite from a unified interactive dashboard at:
 
 ---
 
-## 📋 Comprehensive Catalog Manifest (36 Websites)
+## 📋 Comprehensive Catalog Manifest (37 Websites)
 
 ### 1. Restaurants, Cafes & Bakeries
 
@@ -41,7 +41,8 @@ Experience the entire 36-website suite from a unified interactive dashboard at:
 
 | # | Business Name | Location | Standalone GitHub Repo | Highlights & Interactivity |
 |---|---------------|----------|------------------------|----------------------------|
-| 05 | **Bargad Wala Family Shop** | Lakheran Tola, Burhar | [`shivamgupt-2010/bargad-wala-family-shop`](https://github.com/shivamgupt-2010/bargad-wala-family-shop) | Bridal sarees & ethnic wear gallery, fabric guide, size availability |
+| 05 | **Lakshmi Saree Sansar** | Shraja Mall, Burhar | [shivamgupt-2010/lakshmi-saree-sansar](https://github.com/shivamgupt-2010/lakshmi-saree-sansar) | **Flagship Luxury Saree Boutique**: Fabric weave reveal animation, Banarasi Katan & Kanjivaram showcases, interactive product modal, simulated bag drawer, VIP bridal drape trial booking |
+| 06 | **Bargad Wala Family Shop** | Lakheran Tola, Burhar | [`shivamgupt-2010/bargad-wala-family-shop`](https://github.com/shivamgupt-2010/bargad-wala-family-shop) | Bridal sarees & ethnic wear gallery, fabric guide, size availability |
 | 06 | **Ambey Collection** | Railway Market, Burhar | [`shivamgupt-2010/ambey-collection`](https://github.com/shivamgupt-2010/ambey-collection) | Premium menswear showroom, outfit style matcher, in-store size check |
 | 07 | **Unique Collection** | Krishna Complex, Burhar | [`shivamgupt-2010/unique-collection`](https://github.com/shivamgupt-2010/unique-collection) | Trendy kidswear & youth boutique, age-group filter, festival arrivals |
 

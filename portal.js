@@ -30,10 +30,10 @@ function filterProspects() {
 
   const countElem = document.getElementById('results-count');
   if (countElem) {
-    if (visibleCount === 36 && currentCategory === 'all' && !query) {
-      countElem.textContent = 'Showing all 36 websites';
+    if (visibleCount === 37 && currentCategory === 'all' && !query) {
+      countElem.textContent = 'Showing all 37 websites';
     } else {
-      countElem.textContent = `Showing ${visibleCount} of 36 websites`;
+      countElem.textContent = `Showing ${visibleCount} of 37 websites`;
     }
   }
 }
