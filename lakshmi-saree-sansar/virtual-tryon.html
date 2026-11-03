@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Interactive AI Virtual Draping Simulator | Lakshmi Saree Sansar</title>
+  <meta name="google-site-verification" content="29XGiGGVrfl2Ff3y75voxCAikcCRNu1KlOur1tK6iuM" />
+  <meta name="description" content="Experience virtual saree draping with our interactive simulator. Select fabric weaves, mannequin tones, and pallu drape styles in real-time.">
+  <link rel="canonical" href="https://shiv-portfoliopreview.vercel.app/lakshmi-saree-sansar/virtual-tryon.html">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <!-- Top Concept Announcement Bar -->
+  <aside class="concept-integrity-bar">
+    <div class="container bar-flex">
+      <div class="bar-left">
+        <span class="pill-demo">VIP 9-PAGE FLAGSHIP DEMO</span>
+        <span class="bar-text">Haute Indian Couture Engineering by <strong>SHIV Web Studio</strong> (+91 6267686575). Boutique at Shraja Mall, Burhar, MP.</span>
+      </div>
+      <a href="https://wa.me/916267686575?text=Namaste%20SHIV%2C%20I%20am%20exploring%20the%209-page%20VIP%20Lakshmi%20Saree%20Sansar%20flagship%20website" target="_blank" rel="noopener noreferrer" class="bar-cta">
+        Commission Boutique Web Architecture &rarr;
+      </a>
+    </div>
+  </aside>
+
+  <!-- Luxury Navigation Header -->
+  <header class="boutique-header">
+    <div class="container nav-container">
+      <button class="mobile-toggle" aria-label="Toggle Navigation Menu" onclick="toggleMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a href="index.html" class="brand-mark">
+        <div class="gold-monogram-circle">LS</div>
+        <div class="brand-titles">
+          <span class="brand-title">LAKSHMI SAREE SANSAR</span>
+          <span class="brand-sub">SHRAJA MALL • BURHAR</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link ">Home</a><a href="collections.html" class="nav-link ">Collections</a><a href="bridal-studio.html" class="nav-link ">Bridal Studio</a><a href="virtual-tryon.html" class="nav-link active">Virtual Try-On</a><a href="lookbook.html" class="nav-link ">Lookbook</a><a href="custom-couture.html" class="nav-link ">Custom Atelier</a><a href="heritage.html" class="nav-link ">Heritage</a><a href="vip-appointment.html" class="nav-link ">VIP Suite</a><a href="contact.html" class="nav-link ">Boutique</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/916267686575?text=Namaste%20Lakshmi%20Saree%20Sansar%2C%20I%20am%20inquiring%20about%20a%20VIP%20Bridal%20Drape%20Trial" target="_blank" rel="noopener noreferrer" class="btn-wa-header" title="Chat with Stylist">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          <span class="desktop-only">WhatsApp Stylist</span>
+        </a>
+
+        <button class="bag-trigger" onclick="toggleCartDrawer()" aria-label="Open Simulated Shopping Bag">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="bag-count" id="header-bag-count">0</span>
+        </button>
+
+        <a href="vip-appointment.html" class="btn-vip-header desktop-only">Book Trial</a>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="page-hero" style="background: linear-gradient(180deg, rgba(74,14,23,0.85) 0%, rgba(30,8,15,0.95) 100%), url('https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1400&q=80') center/cover;">
+    <div class="container">
+      <span class="page-kicker">PAGE 04 OF 09 • INTERACTIVE DRAPING SUITE</span>
+      <h1>Interactive AI Virtual Draping Studio</h1>
+      <p>Simulate the fall, pleats, and pallu style of our master weaves on digital model silhouettes before you visit our boutique.</p>
+    </div>
+  </section>
+
+  <main class="container section-pad">
+    <div class="tryon-container">
+      <!-- Left Controls Panel -->
+      <div class="tryon-controls">
+        <h3>1. Select Complexion Silhouette</h3>
+        <div class="tone-selector">
+          <button class="tone-btn active" onclick="setMannequinTone('#fcd5b5', 'Fair / Rose Porcelain', this)">Porcelain</button>
+          <button class="tone-btn" onclick="setMannequinTone('#e0a97b', 'Wheatish Warm Honey', this)">Honey</button>
+          <button class="tone-btn" onclick="setMannequinTone('#b87948', 'Golden Dusk Bronze', this)">Dusk</button>
+          <button class="tone-btn" onclick="setMannequinTone('#7c4a27', 'Deep Velvet Cocoa', this)">Deep</button>
+        </div>
+
+        <h3 style="margin-top:2rem;">2. Choose Master Saree Weave</h3>
+        <div class="fabric-selector">
+          <div class="fabric-opt active" onclick="selectTryonSaree('lss-01', '#4a0e17', '#d4af37', 'Imperial Shahi Banarasi Katan Silk', 'Rs. 18,500', this)">
+            <span class="color-dot" style="background:#4a0e17; border:1px solid #d4af37;"></span>
+            <div>
+              <strong>Banarasi Katan Silk</strong>
+              <small>Deep Wine & Antique Gold Zari (Rs. 18,500)</small>
+            </div>
+          </div>
+
+          <div class="fabric-opt" onclick="selectTryonSaree('lss-02', '#1b4332', '#e5c07b', 'Maharani Kanjivaram Temple Silk', 'Rs. 24,900', this)">
+            <span class="color-dot" style="background:#1b4332; border:1px solid #e5c07b;"></span>
+            <div>
+              <strong>Kanjivaram Temple Silk</strong>
+              <small>Emerald Green & 24K Gold Korvai (Rs. 24,900)</small>
+            </div>
+          </div>
+
+          <div class="fabric-opt" onclick="selectTryonSaree('lss-03', '#e5c07b', '#ffffff', 'Chanderi Gold Tissue Saree', 'Rs. 12,800', this)">
+            <span class="color-dot" style="background:#e5c07b; border:1px solid #fff;"></span>
+            <div>
+              <strong>Chanderi Gold Tissue</strong>
+              <small>Champagne Gold & Ivory Sheen (Rs. 12,800)</small>
+            </div>
+          </div>
+
+          <div class="fabric-opt" onclick="selectTryonSaree('lss-04', '#f5ebe0', '#d4af37', 'Handcrafted Zardozi Organza', 'Rs. 14,200', this)">
+            <span class="color-dot" style="background:#f5ebe0; border:1px solid #d4af37;"></span>
+            <div>
+              <strong>Pure Glass Organza</strong>
+              <small>Blush Rose & Handcut Moti (Rs. 14,200)</small>
+            </div>
+          </div>
+        </div>
+
+        <h3 style="margin-top:2rem;">3. Select Pallu Draping Style</h3>
+        <div class="drape-style-selector">
+          <button class="drape-btn active" onclick="setDrapeStyle('nivi', 'Classic Pleated Nivi Drape', this)">Classic Nivi Pleats</button>
+          <button class="drape-btn" onclick="setDrapeStyle('gujarati', 'Royal Gujarati Seedha Pallu', this)">Royal Front Pallu</button>
+          <button class="drape-btn" onclick="setDrapeStyle('cape', 'Contemporary Flowing Cape Drape', this)">Modern Cape Drape</button>
+        </div>
+      </div>
+
+      <!-- Right Visual Canvas Screen -->
+      <div class="tryon-display">
+        <div class="tryon-canvas-box" id="tryon-box">
+          <!-- Stylized SVG Royal Silhouette -->
+          <svg class="mannequin-svg" viewBox="0 0 300 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Background Glow -->
+            <ellipse cx="150" cy="240" rx="120" ry="200" fill="radial-gradient(circle, rgba(212,175,55,0.15) 0%, transparent 70%)" />
+            
+            <!-- Head / Complexion -->
+            <circle id="svg-face" cx="150" cy="70" r="28" fill="#fcd5b5" />
+            <path id="svg-neck" d="M142 98 L158 98 L160 125 L140 125 Z" fill="#fcd5b5" />
+            
+            <!-- Royal Blouse -->
+            <path id="svg-blouse" d="M120 125 L180 125 L175 175 L125 175 Z" fill="#30080f" stroke="#d4af37" stroke-width="2" />
+            
+            <!-- Saree Skirt Pleats -->
+            <path id="svg-pleats" d="M122 175 L178 175 L195 440 L105 440 Z" fill="#4a0e17" />
+            <!-- Vertical pleat shadow lines -->
+            <line x1="135" y1="180" x2="130" y2="440" stroke="rgba(0,0,0,0.3)" stroke-width="2" />
+            <line x1="150" y1="180" x2="150" y2="440" stroke="rgba(0,0,0,0.3)" stroke-width="2" />
+            <line x1="165" y1="180" x2="170" y2="440" stroke="rgba(0,0,0,0.3)" stroke-width="2" />
+            
+            <!-- Gold Zari Border on Skirt -->
+            <path id="svg-border" d="M103 425 L197 425 L195 440 L105 440 Z" fill="#d4af37" />
+
+            <!-- Dynamic Pallu Overlay -->
+            <path id="svg-pallu" d="M125 130 C110 160 100 240 115 320 C125 380 135 410 135 410 L145 405 C145 405 135 360 130 300 C125 240 135 180 145 130 Z" fill="#d4af37" opacity="0.9" />
+
+            <!-- Royal Necklace -->
+            <path d="M136 122 C145 135 155 135 164 122" stroke="#d4af37" stroke-width="3" stroke-linecap="round" />
+            <circle cx="150" cy="132" r="3" fill="#881337" />
+          </svg>
+
+          <!-- Current Try-on Specs Bar -->
+          <div class="tryon-status-card">
+            <div>
+              <span class="status-label">SIMULATED ATELIER LOOK:</span>
+              <h4 id="status-saree-name">Imperial Shahi Banarasi Katan Silk</h4>
+              <p id="status-drape-style">Style: Classic Pleated Nivi Drape • Complexion: Fair / Rose Porcelain</p>
+            </div>
+            <div class="status-action">
+              <span class="status-price" id="status-saree-price">Rs. 18,500</span>
+              <button class="btn-wa-header" onclick="orderCurrentTryonLook()">Order Look via WhatsApp &rarr;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  
+  <!-- Footer -->
+  <footer class="boutique-footer">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <h3 class="footer-brand">LAKSHMI SAREE SANSAR</h3>
+        <p class="footer-tagline">"Where Heritage Meets Haute Couture." Shraja Mall, Burhar, MP.</p>
+        <p class="footer-desc">Curating authentic Banarasi Katan, Kanjivaram Temple weaves, Chanderi Tissue and regal bridal trousseaus for the modern Indian royal aesthetic.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>The 9 Flagship Pages</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Grand Flagship Home</a></li>
+          <li><a href="collections.html">Saree Treasury & Filters</a></li>
+          <li><a href="bridal-studio.html">Imperial Bridal Lounge</a></li>
+          <li><a href="virtual-tryon.html">Interactive Virtual Try-On</a></li>
+          <li><a href="lookbook.html">Editorial Lookbook 2026</a></li>
+          <li><a href="custom-couture.html">Bespoke Weave Atelier</a></li>
+          <li><a href="heritage.html">75-Year Weaving Lineage</a></li>
+          <li><a href="vip-appointment.html">VIP Draping Suite Booking</a></li>
+          <li><a href="contact.html">Boutique & Valet Directions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Boutique & Concierge</h4>
+        <p><strong>Address:</strong> Ground Floor, Shraja Mall, Near NDC College, Amarkantak Road, Burhar, Madhya Pradesh 484110</p>
+        <p><strong>Hours:</strong> Open 7 Days: 10:30 AM – 9:00 PM</p>
+        <p><strong>Stylist Helpline:</strong> <a href="tel:+916267686575" style="color:var(--color-gold);">+91 6267686575</a></p>
+        <div style="margin-top:1rem;">
+          <a href="https://maps.google.com/?q=Shraja+Mall+Burhar+Madhya+Pradesh" target="_blank" rel="noopener noreferrer" class="btn-footer-map">📍 Get Google Maps Directions</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-sub">
+      <div class="footer-sub-flex">
+        <span>© 2026 Lakshmi Saree Sansar. Independent Haute Couture Architecture engineered by <a href="https://wa.me/916267686575" target="_blank"><strong>SHIV Web Studio (Shivam Gupta)</strong></a>.</span>
+        <div class="footer-sub-links">
+          <a href="heritage.html">Silk Mark Authenticity</a> • <a href="vip-appointment.html">Private Suite</a> • <a href="contact.html">Shraja Mall</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile Bottom Bar -->
+  <div class="mobile-sticky-bar">
+    <a href="collections.html" class="sticky-btn">👗 Sarees</a>
+    <a href="virtual-tryon.html" class="sticky-btn">✨ Try-On</a>
+    <a href="vip-appointment.html" class="sticky-btn trial">👑 Book Trial</a>
+    <a href="https://wa.me/916267686575?text=Namaste%20Lakshmi%20Saree%20Sansar%2C%20I%20want%20to%20order%20or%20inquire%20via%20WhatsApp" target="_blank" rel="noopener noreferrer" class="sticky-btn wa">💬 WhatsApp</a>
+  </div>
+
+  <!-- Simulated Shopping Bag Drawer -->
+  <aside id="cart-drawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Your Bridal Bag (<span id="cart-count">0</span>)</h3>
+      <button class="cart-close" onclick="toggleCartDrawer()">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items-container">
+      <div class="cart-empty-state">
+        <p>Your bridal trousseau bag is currently empty.</p>
+        <a href="collections.html" class="btn-primary" style="margin-top:1rem; display:inline-block;">Explore Master Treasury &rarr;</a>
+      </div>
+    </div>
+    <div class="cart-footer" id="cart-footer" style="display:none;">
+      <div class="cart-total-row">
+        <span>Estimated Total:</span>
+        <strong id="cart-total-amount">Rs. 0</strong>
+      </div>
+      <p class="cart-note">* Simulated shopping bag only. No actual online payment processed.</p>
+      <button class="btn-checkout" onclick="triggerSimulatedCheckout()">Reserve Selection via WhatsApp Stylist &rarr;</button>
+    </div>
+  </aside>
+
+  <!-- Interactive Product Quick View Modal -->
+  <div id="product-modal" class="product-modal-overlay" aria-hidden="true">
+    <div class="product-modal-content">
+      <button class="modal-close" onclick="closeProductModal()">&times;</button>
+      <div class="modal-grid" id="modal-grid-content">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bespoke Commissions & Custom Configurator — Sigma Electronics & Furniture (Piyoosh Marketing)</title>
+  <meta name="google-site-verification" content="29XGiGGVrfl2Ff3y75voxCAikcCRNu1KlOur1tK6iuM" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="lux-announcement">
+    ✨ HAUTE-COUTURE 7-PAGE FLAGSHIP SUITE • Engineered by SHIV Web Studio (+91 6267686575)
+    <a href="https://wa.me/916267686575?text=I%20saw%20the%207-page%20Premium%20Luxury%20demo%20website%20of%20Sigma%20Electronics%20%26%20Furniture%20%28Piyoosh%20Marketing%29%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV" target="_blank">Commission A Flagship Website &rarr;</a>
+  </div>
+  <header class="lux-header">
+    <div class="container lux-header-flex">
+      <a href="index.html" class="lux-brand">
+        <div class="lux-monogram">SI</div>
+        <div class="lux-brand-text">
+          <h2>Sigma Electronics & Furniture (Piyoosh Marketing)</h2>
+          <span>HAUTE LUXURY • BURHAR, MADHYA PRADESH</span>
+        </div>
+      </a>
+      <nav class="lux-nav">
+        <a href="index.html" class="">Home</a><a href="collections.html" class="">Collections</a><a href="lookbook.html" class="">Lookbook</a><a href="concierge.html" class="">VIP Concierge</a><a href="bespoke.html" class="active">Bespoke Atelier</a><a href="heritage.html" class="">Heritage</a><a href="contact.html" class="">Showroom</a>
+      </nav>
+      <a href="concierge.html" class="btn-vip-concierge">
+        VIP Concierge
+      </a>
+    </div>
+  </header>
+        
+  <section class="lux-page-hero">
+    <div class="container">
+      <span class="lux-kicker">PAGE 05 OF 07 • BESPOKE COMMISSIONS</span>
+      <h1>Custom Solid Wood & Turnkey Interior Configurator</h1>
+      <p>Configure room packages, select wood species, and calculate estimated turnkey costs for your home.</p>
+    </div>
+  </section>
+  <main class="container lux-section">
+    <div class="bespoke-layout">
+      <div class="bespoke-form-card">
+        <h2>Configure Your Order</h2>
+        <p>Interactive real-time estimation and bespoke specifications.</p>
+        <form id="bespoke-form" onsubmit="event.preventDefault(); submitBespoke();">
+          <div class="bespoke-group">
+            <label>1. Room Living Package:</label>
+            <select id="bespoke-opt1" onchange="calcBespoke()">
+              <option value="240000" data-name="Complete 3BHK Solid Teakwood Living Suite (Rs. 2,40,000)">Complete 3BHK Solid Teakwood Living Suite (Rs. 2,40,000)</option><option value="160000" data-name="Turnkey German Modular Kitchen & Chimney (Rs. 1,60,000)">Turnkey German Modular Kitchen & Chimney (Rs. 1,60,000)</option><option value="115000" data-name="Master Suite Bed + 8-Door Floor-to-Ceiling Wardrobe (Rs. 1,15,000)">Master Suite Bed + 8-Door Floor-to-Ceiling Wardrobe (Rs. 1,15,000)</option>
+            </select>
+          </div>
+          <div class="bespoke-group">
+            <label>2. Material Grade & Electronics Bundle:</label>
+            <select id="bespoke-opt2" onchange="calcBespoke()">
+              <option value="40000" data-name="100% Grade-A CP Teakwood with PU Matte Finish (+Rs. 40,000)">100% Grade-A CP Teakwood with PU Matte Finish (+Rs. 40,000)</option><option value="95000" data-name="Smart Home Appliance Bundle (OLED TV + 4-Door Refrigerator) (+Rs. 95,000)">Smart Home Appliance Bundle (OLED TV + 4-Door Refrigerator) (+Rs. 95,000)</option><option value="15000" data-name="3-Year Turnkey Warranty & Free White-Glove Installation (+Rs. 15,000)">3-Year Turnkey Warranty & Free White-Glove Installation (+Rs. 15,000)</option>
+            </select>
+          </div>
+          <div class="bespoke-group">
+            <label>3. Room Count:</label>
+            <input type="number" id="bespoke-qty" value="1" min="1" max="200" oninput="calcBespoke()">
+          </div>
+          <div class="bespoke-group">
+            <label>4. Patron Name & Phone:</label>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
+              <input type="text" id="b-name" placeholder="Your Name" required>
+              <input type="tel" id="b-phone" placeholder="Mobile Number" required>
+            </div>
+          </div>
+          <button type="submit" class="btn-submit-concierge" style="width:100%; margin-top:1rem;">Submit Custom Specification &rarr;</button>
+        </form>
+      </div>
+
+      <div class="bespoke-summary-card">
+        <h3>Estimated Specification</h3>
+        <div class="summary-row">
+          <span>Primary Choice:</span>
+          <strong id="sum-b-opt1">Complete 3BHK Solid Teakwood Living Suite (Rs. 2,40,000)</strong>
+        </div>
+        <div class="summary-row">
+          <span>Add-on Option:</span>
+          <strong id="sum-b-opt2">100% Grade-A CP Teakwood with PU Matte Finish (+Rs. 40,000)</strong>
+        </div>
+        <div class="summary-row">
+          <span>Count / Units:</span>
+          <strong id="sum-b-qty">1</strong>
+        </div>
+        <div class="total-row">
+          <span>Total Estimated Investment:</span>
+          <strong id="sum-b-total">Rs. 280,000</strong>
+        </div>
+        <div style="text-align:center; margin-top:2rem; padding-top:1.5rem; border-top:1px solid var(--border-gold);">
+          <p style="font-size:0.8rem; color:var(--text-muted);">* All custom orders include dedicated management oversight and white-glove fulfillment.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function calcBespoke() {
+      const opt1 = document.getElementById('bespoke-opt1');
+      const opt2 = document.getElementById('bespoke-opt2');
+      const qty = parseInt(document.getElementById('bespoke-qty').value) || 1;
+      const c1 = parseInt(opt1.value) || 0;
+      const c2 = parseInt(opt2.value) || 0;
+      const total = (c1 + c2) * qty;
+
+      document.getElementById('sum-b-opt1').textContent = opt1.options[opt1.selectedIndex].getAttribute('data-name');
+      document.getElementById('sum-b-opt2').textContent = opt2.options[opt2.selectedIndex].getAttribute('data-name');
+      document.getElementById('sum-b-qty').textContent = qty;
+      document.getElementById('sum-b-total').textContent = 'Rs. ' + total.toLocaleString('en-IN');
+    }
+
+    function submitBespoke() {
+      const name = document.getElementById('b-name').value;
+      const phone = document.getElementById('b-phone').value;
+      const opt1 = document.getElementById('sum-b-opt1').textContent;
+      const opt2 = document.getElementById('sum-b-opt2').textContent;
+      const total = document.getElementById('sum-b-total').textContent;
+
+      const msg = encodeURIComponent(`Bespoke Inquiry for Sigma Electronics & Furniture (Piyoosh Marketing):
+- Client: ${name} (${phone})
+- Selection: ${opt1}
+- Add-on: ${opt2}
+- Total Estimate: ${total}`);
+      window.open(`https://wa.me/916267686575?text=${msg}`, '_blank');
+    }
+  </script>
+  
+  <footer class="lux-footer">
+    <div class="container lux-footer-grid">
+      <div>
+        <h4>Sigma Electronics & Furniture (Piyoosh Marketing)</h4>
+        <p>One-Stop Mega Showroom for Complete Home Living & Appliances</p>
+        <p style="margin-top:0.8rem; font-size:0.85rem;">📍 Lakheran Tola, Burhar, Shahdol, MP 484110</p>
+      </div>
+      <div>
+        <h4>The 7 Flagship Pages</h4>
+        <p><a href="index.html">Flagship Home</a> • <a href="collections.html">Collections</a></p>
+        <p><a href="lookbook.html">Editorial Lookbook</a> • <a href="concierge.html">VIP Concierge</a></p>
+        <p><a href="bespoke.html">Bespoke Atelier</a> • <a href="heritage.html">Heritage Lineage</a></p>
+        <p><a href="contact.html">Private Showroom Salon</a></p>
+      </div>
+      <div>
+        <h4>Private VIP Concierge</h4>
+        <p>VIP WhatsApp: +91 6267686575</p>
+        <a href="concierge.html" style="display:inline-block; margin-top:0.6rem; color:var(--gold-primary); text-decoration:underline; font-weight:700;">Schedule Private Consultation &rarr;</a>
+      </div>
+    </div>
+    <div class="container" style="text-align:center; font-size:0.75rem; border-top:1px solid var(--border-gold); padding-top:1.5rem;">
+      © 2026 Sigma Electronics & Furniture (Piyoosh Marketing). Independent 7-Page Haute Couture Architecture engineered by <a href="https://wa.me/916267686575" target="_blank" style="color:var(--gold-primary);">SHIV Web Studio (Shivam Gupta)</a>.
+    </div>
+  </footer>
+        
+</body>
+</html>

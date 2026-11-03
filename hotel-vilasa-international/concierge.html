@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>VIP Concierge & Viewing Reservation — Hotel Vilasa International</title>
+  <title>Private VIP Concierge & Viewing — Hotel Vilasa International</title>
   <meta name="google-site-verification" content="29XGiGGVrfl2Ff3y75voxCAikcCRNu1KlOur1tK6iuM" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
@@ -11,8 +11,8 @@
 <body>
   
   <div class="lux-announcement">
-    ✨ HAUTE-COUTURE FLAGSHIP DEMO (5 Luxury Multi-Pages) • Engineered by SHIV Web Studio
-    <a href="https://wa.me/916267686575?text=I%20saw%20the%20demo%20website%20of%20Hotel%20Vilasa%20International%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV" target="_blank">Commission A Flagship Website &rarr;</a>
+    ✨ HAUTE-COUTURE 7-PAGE FLAGSHIP SUITE • Engineered by SHIV Web Studio (+91 6267686575)
+    <a href="https://wa.me/916267686575?text=I%20saw%20the%207-page%20Premium%20Luxury%20demo%20website%20of%20Hotel%20Vilasa%20International%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV" target="_blank">Commission A Flagship Website &rarr;</a>
   </div>
   <header class="lux-header">
     <div class="container lux-header-flex">
@@ -24,62 +24,70 @@
         </div>
       </a>
       <nav class="lux-nav">
-        <a href="index.html" class="">Home</a><a href="collections.html" class="">Collections</a><a href="concierge.html" class="active">VIP Concierge</a><a href="heritage.html" class="">Heritage</a><a href="contact.html" class="">Showroom</a>
+        <a href="index.html" class="">Home</a><a href="collections.html" class="">Collections</a><a href="lookbook.html" class="">Lookbook</a><a href="concierge.html" class="active">VIP Concierge</a><a href="bespoke.html" class="">Bespoke Atelier</a><a href="heritage.html" class="">Heritage</a><a href="contact.html" class="">Showroom</a>
       </nav>
       <a href="concierge.html" class="btn-vip-concierge">
         VIP Concierge
       </a>
     </div>
   </header>
-            
-  <section class="lux-hero" style="padding: 4.5rem 0 3.5rem;">
+        
+  <section class="lux-page-hero">
     <div class="container">
-      <span class="lux-hero-kicker">BY APPOINTMENT ONLY</span>
-      <h1>Private Viewing & Concierge</h1>
-      <p>Enjoy dedicated advisory, private consultation lounges, and personalized walkthroughs.</p>
+      <span class="lux-kicker">PAGE 04 OF 07 • PRIVATE SALON RESERVATION</span>
+      <h1>Private VIP Concierge</h1>
+      <p>Reserve an exclusive viewing appointment with dedicated hospitality in Burhar, Madhya Pradesh.</p>
     </div>
   </section>
-  <main class="container" style="padding: 4rem 0;">
+  <main class="container lux-section">
     <div class="concierge-card">
-      <div style="text-align: center;">
-        <h2 style="font-family: var(--font-serif); color: var(--gold-primary); font-size: 1.8rem; margin-bottom: 0.5rem;">Reserve Private Consultation</h2>
-        <p style="color: var(--text-muted); font-size: 0.9rem;">Your request is routed directly to the principal director's private WhatsApp desk.</p>
-      </div>
-      <form class="concierge-form" onsubmit="submitVIP(event)">
+      <h2 style="font-family:var(--font-serif); color:#fff; text-align:center;">Schedule Consultation</h2>
+      <form class="concierge-form" onsubmit="event.preventDefault(); alert('Your VIP viewing request has been received. Our concierge will confirm via WhatsApp within 15 minutes.'); window.open('https://wa.me/916267686575?text=' + encodeURIComponent('VIP Concierge Request for ' + document.getElementById('vip_name').value + ' at Hotel Vilasa International'), '_blank');">
         <div class="concierge-field">
-          <label>Distinguished Guest Name</label>
-          <input type="text" id="vip-name" placeholder="e.g. Maharani / Thakur / Mr. Sharma" required>
+          <label>Full Name</label>
+          <input type="text" id="vip_name" placeholder="Lord / Lady / Dr. / Shri" required>
         </div>
         <div class="concierge-field">
-          <label>Direct Telephone / WhatsApp</label>
-          <input type="tel" id="vip-phone" placeholder="e.g. +91 98765 43210" required>
+          <label>WhatsApp Contact</label>
+          <input type="tel" id="vip_phone" placeholder="+91 98765 43210" required>
         </div>
         <div class="concierge-field">
-          <label>Primary Collection of Interest</label>
-          <select id="vip-interest">
-            <option value="Imperial Club Room">Imperial Club Room</option><option value="Vilasa Grand Royal Suite">Vilasa Grand Royal Suite</option><option value="Mahavir Grand Banquet Hall">Mahavir Grand Banquet Hall</option><option value="Vilasa Rooftop Restaurant">Vilasa Rooftop Restaurant</option>
-            <option value="Bespoke Masterpiece Commission">Bespoke Masterpiece Commission</option>
-          </select>
+          <label>Preferred Date & Time Window</label>
+          <input type="text" placeholder="e.g. Tomorrow 4:00 PM (Private Viewing)">
         </div>
         <div class="concierge-field">
-          <label>Preferred Consultation Date</label>
-          <input type="date" id="vip-date" required>
+          <label>Specific Interests</label>
+          <textarea rows="3" placeholder="Tell us about the specific collections or private event details..."></textarea>
         </div>
-        <button type="submit" class="btn-submit-concierge">Confirm VIP Viewing via WhatsApp &rarr;</button>
+        <button type="submit" class="btn-submit-concierge">Transmit VIP Reservation &rarr;</button>
       </form>
     </div>
   </main>
-
-  <script>
-    function submitVIP(e) {
-      e.preventDefault();
-      const name = document.getElementById('vip-name').value;
-      const phone = document.getElementById('vip-phone').value;
-      const interest = document.getElementById('vip-interest').value;
-      const date = document.getElementById('vip-date').value;
-      const msg = `*VIP Private Consultation Request*\n👑 Guest: ${name}\n📞 Phone: ${phone}\n🏷️ Collection: ${interest}\n📅 Date: ${date}\n\n_Sent via Hotel Vilasa International Luxury Flagship Portal_`;
-      window.open('https://wa.me/916267686575?text=' + encodeURIComponent(msg), '_blank');
-    }
-  </script>
+  
+  <footer class="lux-footer">
+    <div class="container lux-footer-grid">
+      <div>
+        <h4>Hotel Vilasa International</h4>
+        <p>Grand Celebrations, Luxury Suites & Multi-Cuisine Dining</p>
+        <p style="margin-top:0.8rem; font-size:0.85rem;">📍 Near Rest House, Mahavir Gate, Burhar, MP 484110</p>
+      </div>
+      <div>
+        <h4>The 7 Flagship Pages</h4>
+        <p><a href="index.html">Flagship Home</a> • <a href="collections.html">Collections</a></p>
+        <p><a href="lookbook.html">Editorial Lookbook</a> • <a href="concierge.html">VIP Concierge</a></p>
+        <p><a href="bespoke.html">Bespoke Atelier</a> • <a href="heritage.html">Heritage Lineage</a></p>
+        <p><a href="contact.html">Private Showroom Salon</a></p>
+      </div>
+      <div>
+        <h4>Private VIP Concierge</h4>
+        <p>VIP WhatsApp: +91 6267686575</p>
+        <a href="concierge.html" style="display:inline-block; margin-top:0.6rem; color:var(--gold-primary); text-decoration:underline; font-weight:700;">Schedule Private Consultation &rarr;</a>
+      </div>
+    </div>
+    <div class="container" style="text-align:center; font-size:0.75rem; border-top:1px solid var(--border-gold); padding-top:1.5rem;">
+      © 2026 Hotel Vilasa International. Independent 7-Page Haute Couture Architecture engineered by <a href="https://wa.me/916267686575" target="_blank" style="color:var(--gold-primary);">SHIV Web Studio (Shivam Gupta)</a>.
+    </div>
+  </footer>
+        
 </body>
 </html>

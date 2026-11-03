@@ -1363,3 +1363,777 @@ body {
   .footer-bottom { flex-direction: column; text-align: center; }
   .cart-drawer { width: 100%; right: -100%; }
 }
+
+/* ==========================================================================
+   VIP 9-Page Flagship Luxury Components
+   Engineered by SHIV Web Studio (+91 6267686575)
+   ========================================================================== */
+
+/* Gold Monogram Circle & Brand Titles */
+.gold-monogram-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-gold);
+  color: var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif-title);
+  font-weight: 700;
+  font-size: 1.1rem;
+  background: rgba(74, 14, 23, 0.4);
+  box-shadow: 0 0 15px var(--color-gold-glow);
+}
+.brand-titles {
+  display: flex;
+  flex-direction: column;
+}
+.btn-vip-header {
+  background: linear-gradient(135deg, var(--color-gold), #b45309);
+  color: #000;
+  font-family: var(--font-serif-title);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 0.5rem 1.1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-vip-header:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(212,175,55,0.4);
+}
+
+/* Page Hero */
+.page-hero {
+  padding: 5rem 0 3.5rem;
+  text-align: center;
+  position: relative;
+}
+.page-hero .page-kicker {
+  font-family: var(--font-serif-title);
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  color: var(--color-gold);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+.page-hero h1 {
+  font-family: var(--font-serif-title);
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  color: #fff;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.8rem;
+}
+.page-hero p {
+  color: var(--color-beige);
+  font-size: 1.05rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Flagship Pages Grid Teaser */
+.pages-teaser-section {
+  padding: 4.5rem 0;
+  background: #140407;
+  border-bottom: 1px solid var(--color-border);
+}
+.flagship-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+.flagship-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.8rem;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.flagship-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-gold);
+  background: rgba(74, 14, 23, 0.25);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+}
+.flagship-card.highlight {
+  border-color: var(--color-gold);
+  background: linear-gradient(135deg, rgba(74, 14, 23, 0.5) 0%, rgba(20, 4, 7, 0.8) 100%);
+}
+.card-num {
+  font-family: var(--font-serif-title);
+  font-size: 0.85rem;
+  color: var(--color-gold);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+.flagship-card h3 {
+  font-family: var(--font-serif-title);
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.flagship-card p {
+  color: var(--color-beige);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  margin-bottom: 1.2rem;
+  flex: 1;
+}
+.link-arrow {
+  color: var(--color-gold);
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+/* Bridal Ceremony Grid */
+.bridal-ceremony-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.8rem;
+  margin-top: 2.5rem;
+}
+.ceremony-card {
+  background: var(--color-wine-dark);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 2rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.ceremony-card:hover {
+  border-color: var(--color-gold);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+.ceremony-num {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--color-gold);
+  border-radius: 50%;
+  color: var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif-title);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.ceremony-card h3 {
+  font-family: var(--font-serif-title);
+  color: #fff;
+  font-size: 1.35rem;
+  margin-bottom: 0.4rem;
+}
+.ceremony-weave {
+  display: inline-block;
+  color: var(--color-gold);
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.ceremony-card p {
+  color: var(--color-beige);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+.suggested-palette {
+  display: block;
+  font-size: 0.78rem;
+  color: #d1d5db;
+  border-top: 1px dashed var(--color-border);
+  padding-top: 0.75rem;
+  font-style: italic;
+}
+.bridal-cta-box {
+  background: linear-gradient(135deg, #30080f 0%, #1e050a 100%);
+  border: 1.5px solid var(--color-gold);
+  border-radius: 12px;
+  padding: 3.5rem 2rem;
+  text-align: center;
+  margin-top: 4rem;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+.bridal-cta-box h2 {
+  font-family: var(--font-serif-title);
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+.bridal-cta-box p {
+  color: var(--color-beige);
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+/* Virtual Try-on Interactive Studio */
+.tryon-container {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+.tryon-controls {
+  background: rgba(30, 8, 15, 0.7);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 2rem;
+}
+.tryon-controls h3 {
+  font-family: var(--font-serif-title);
+  font-size: 1.05rem;
+  color: #fff;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.85rem;
+}
+.tone-selector {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.tone-btn {
+  padding: 0.5rem 1rem;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--color-border);
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.tone-btn.active, .tone-btn:hover {
+  background: var(--color-gold);
+  color: #000;
+  font-weight: 700;
+  border-color: var(--color-gold);
+}
+.fabric-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.fabric-opt {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.85rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.fabric-opt:hover, .fabric-opt.active {
+  background: rgba(74, 14, 23, 0.6);
+  border-color: var(--color-gold);
+}
+.color-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.fabric-opt strong {
+  display: block;
+  font-size: 0.92rem;
+  color: #fff;
+}
+.fabric-opt small {
+  color: var(--color-beige);
+  font-size: 0.78rem;
+}
+.drape-style-selector {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.drape-btn {
+  padding: 0.55rem 0.9rem;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--color-border);
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.82rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.drape-btn.active, .drape-btn:hover {
+  background: var(--color-gold);
+  color: #000;
+  font-weight: 700;
+  border-color: var(--color-gold);
+}
+
+.tryon-display {
+  display: flex;
+  flex-direction: column;
+}
+.tryon-canvas-box {
+  background: #0d0406;
+  border: 1.5px solid var(--color-gold);
+  border-radius: 12px;
+  padding: 2rem;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 15px 45px rgba(0,0,0,0.6);
+}
+.mannequin-svg {
+  width: 100%;
+  max-width: 320px;
+  height: 440px;
+  margin: 0 auto;
+  filter: drop-shadow(0 10px 25px rgba(0,0,0,0.8));
+}
+.tryon-status-card {
+  margin-top: 1.5rem;
+  background: rgba(30, 8, 15, 0.9);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.status-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  color: var(--color-gold);
+  font-weight: 700;
+  display: block;
+}
+.tryon-status-card h4 {
+  font-family: var(--font-serif-title);
+  color: #fff;
+  font-size: 1.15rem;
+  margin: 0.2rem 0;
+}
+.tryon-status-card p {
+  color: var(--color-beige);
+  font-size: 0.82rem;
+}
+.status-action {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.status-price {
+  font-family: var(--font-serif-title);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-gold);
+}
+
+/* Editorial Lookbook */
+.lookbook-intro {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 3.5rem;
+}
+.lookbook-intro p {
+  color: var(--color-beige);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+.lookbook-editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+}
+.lookbook-card {
+  background: var(--color-wine-dark);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.lookbook-img-box {
+  height: 380px;
+  position: relative;
+  overflow: hidden;
+}
+.lookbook-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.lookbook-card:hover .lookbook-img-box img {
+  transform: scale(1.06);
+}
+.lookbook-season {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(8px);
+  color: var(--color-gold);
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  letter-spacing: 0.1em;
+}
+.lookbook-caption {
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.lookbook-theme {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: var(--color-gold);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.lookbook-caption h3 {
+  font-family: var(--font-serif-title);
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 0.35rem 0 0.75rem;
+}
+.lookbook-caption p {
+  color: var(--color-beige);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* Custom Atelier */
+.custom-atelier-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+.atelier-form-box {
+  background: var(--color-wine-dark);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 2.5rem;
+}
+.atelier-form-box h2 {
+  font-family: var(--font-serif-title);
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 0.4rem;
+}
+.atelier-form-box p {
+  color: var(--color-beige);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+.form-group {
+  margin-bottom: 1.5rem;
+}
+.form-group label {
+  font-family: var(--font-serif-title);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  color: var(--color-gold);
+  display: block;
+  margin-bottom: 0.45rem;
+}
+.form-group select, .form-group input, .form-group textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background: rgba(0,0,0,0.5);
+  border: 1px solid var(--color-border);
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.92rem;
+  border-radius: 4px;
+}
+.form-group select:focus, .form-group input:focus, .form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-gold);
+  box-shadow: 0 0 10px var(--color-gold-glow);
+}
+.atelier-summary-box {
+  background: #140407;
+  border: 1.5px solid var(--color-gold);
+  border-radius: 10px;
+  padding: 2.2rem;
+}
+.atelier-summary-box h3 {
+  font-family: var(--font-serif-title);
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.75rem;
+}
+.summary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  color: var(--color-beige);
+  border-bottom: 1px dashed rgba(255,255,255,0.08);
+  padding-bottom: 0.6rem;
+}
+.summary-item strong {
+  color: #fff;
+  text-align: right;
+  max-width: 60%;
+}
+.summary-total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-gold);
+  margin-top: 0.5rem;
+}
+.summary-total-row span {
+  font-family: var(--font-serif-title);
+  font-size: 0.95rem;
+  color: var(--color-gold);
+  font-weight: 700;
+}
+.summary-total-row strong {
+  font-family: var(--font-serif-title);
+  font-size: 1.6rem;
+  color: #fff;
+}
+.craft-seal {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+.craft-seal h4 {
+  font-family: var(--font-serif-title);
+  font-size: 0.95rem;
+  color: var(--color-gold);
+  margin-bottom: 0.35rem;
+}
+.craft-seal p {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  line-height: 1.5;
+}
+
+/* Heritage Timeline */
+.heritage-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 800px;
+  margin: 0 auto 5rem;
+  position: relative;
+  border-left: 2px solid var(--color-gold);
+  padding-left: 2rem;
+}
+.timeline-block {
+  position: relative;
+}
+.timeline-block::before {
+  content: '';
+  position: absolute;
+  left: -2.65rem;
+  top: 0.2rem;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  box-shadow: 0 0 10px var(--color-gold);
+}
+.timeline-year {
+  font-family: var(--font-serif-title);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--color-gold);
+  display: block;
+  margin-bottom: 0.35rem;
+}
+.timeline-block h3 {
+  font-family: var(--font-serif-title);
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+}
+.timeline-block p {
+  color: var(--color-beige);
+  line-height: 1.65;
+  font-size: 0.95rem;
+}
+.cert-guide-box {
+  background: var(--color-wine-dark);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 3.5rem 2rem;
+}
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.cert-card {
+  background: rgba(0,0,0,0.3);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.8rem;
+}
+.cert-card h4 {
+  font-family: var(--font-serif-title);
+  color: var(--color-gold);
+  font-size: 1.15rem;
+  margin-bottom: 0.6rem;
+}
+.cert-card p {
+  color: var(--color-beige);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+/* VIP Booking */
+.vip-booking-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  align-items: start;
+}
+.vip-perks-box {
+  background: var(--color-wine-dark);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 2.5rem;
+}
+.vip-perks-box h3 {
+  font-family: var(--font-serif-title);
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.vip-perks-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.vip-perks-list li {
+  color: var(--color-beige);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+.vip-perks-list strong {
+  color: #fff;
+}
+.vip-direct-wa {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+.vip-direct-wa p {
+  font-size: 0.85rem;
+  color: var(--color-beige);
+  margin-bottom: 0.75rem;
+}
+.vip-form-box {
+  background: #140407;
+  border: 1.5px solid var(--color-gold);
+  border-radius: 10px;
+  padding: 2.5rem;
+  box-shadow: 0 15px 45px rgba(0,0,0,0.5);
+}
+.vip-form-box h3 {
+  font-family: var(--font-serif-title);
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.75rem;
+}
+
+/* Contact Coordinates */
+.contact-showcase-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+.contact-details-box {
+  background: var(--color-wine-dark);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 2.5rem;
+}
+.contact-details-box h3 {
+  font-family: var(--font-serif-title);
+  color: #fff;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+.coord-item {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 1.8rem;
+}
+.coord-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+.coord-item strong {
+  display: block;
+  font-family: var(--font-serif-title);
+  color: var(--color-gold);
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+.coord-item p {
+  color: var(--color-beige);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+.contact-form-box {
+  background: #140407;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 2.5rem;
+}
+.contact-form-box h3 {
+  font-family: var(--font-serif-title);
+  color: #fff;
+  font-size: 1.6rem;
+  margin-bottom: 0.4rem;
+}
+.contact-form-box p {
+  color: var(--color-beige);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .tryon-container { grid-template-columns: 1fr; }
+  .custom-atelier-layout { grid-template-columns: 1fr; }
+  .vip-booking-container { grid-template-columns: 1fr; }
+  .contact-showcase-grid { grid-template-columns: 1fr; }
+}

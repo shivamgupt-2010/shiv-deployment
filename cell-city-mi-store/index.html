@@ -3,119 +3,341 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Cell City Mi Store — Fast Storefront | Dhanpuri, Shahdol, MP</title>
+  <title>Cell City Mi Store — Smartphones, Laptops, Robot Vacuums & Smart Living | Dhanpuri, Shahdol, MP</title>
+  
   <meta name="google-site-verification" content="29XGiGGVrfl2Ff3y75voxCAikcCRNu1KlOur1tK6iuM" />
+
   <meta name="description" content="High-octane tech storefront showcasing Xiaomi ecosystem hardware in Dhanpuri. Includes genuine product verification, warranty registration help, and live festival pricing alerts.">
+  <meta name="keywords" content="Cell City Mi Store, Mi Authorized Showroom & Ecosystem Store, Electronics & Mobile, Dhanpuri, Shahdol, MP, SHIV Web Studio">
+  <meta name="author" content="SHIV Web Studio">
   <link rel="canonical" href="https://shiv-portfoliopreview.vercel.app/cell-city-mi-store/">
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Cell City Mi Store — Smartphones, Laptops, Robot Vacuums & Smart Living">
+  <meta property="og:description" content="High-octane tech storefront showcasing Xiaomi ecosystem hardware in Dhanpuri. Includes genuine product verification, warranty registration help, and live festival pricing alerts.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shiv-portfoliopreview.vercel.app/cell-city-mi-store/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1400&q=80">
+
+  <!-- High-Speed DNS Pre-resolution & Preconnect -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="dns-prefetch" href="https://images.unsplash.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Cabinet+Grotesk,+sans-serif&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="top-deal-bar">⚡ Special Fast Walk-In Deal: Direct WhatsApp Orders Supported Today</div>
-  <div class="concept-note">Independent Starter Demo crafted by <strong>SHIV Web Studio</strong>. <a href="https://wa.me/916267686575?text=I%20saw%20the%20demo%20website%20of%20Cell%20City%20Mi%20Store%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV" target="_blank">Order a Website &rarr;</a></div>
 
-  <header class="site-header">
-    <div class="container header-flex">
-      <a href="#" class="brand-name">Cell City Mi Store</a>
-      <div class="header-actions">
-        <a href="https://wa.me/916267686575?text=I%20saw%20the%20demo%20website%20of%20Cell%20City%20Mi%20Store%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV" target="_blank" rel="noopener noreferrer" class="btn-wa-header">💬 WhatsApp Order</a>
+  <!-- Typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ElectronicsStore",
+    "name": "Cell City Mi Store",
+    "description": "High-octane tech storefront showcasing Xiaomi ecosystem hardware in Dhanpuri. Includes genuine product verification, warranty registration help, and live festival pricing alerts.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Main Market Road, Dhanpuri, Shahdol, MP 484114",
+      "addressLocality": "Dhanpuri, Shahdol, MP",
+      "addressCountry": "IN"
+    },
+    "url": "https://shiv-portfoliopreview.vercel.app/cell-city-mi-store/",
+    "telephone": "+91 6267686575"
+  }
+  </script>
+</head>
+<body class="tier-starter">
+
+  <!-- Sub-850ms Skippable Startup Animation -->
+  <div id="startup-screen" class="startup-overlay">
+    <div class="startup-content">
+      <div class="startup-monogram">
+        <svg width="76" height="76" viewBox="0 0 100 100" fill="none">
+          <circle cx="50" cy="50" r="44" stroke="#ff6900" stroke-width="3" stroke-dasharray="280" stroke-dashoffset="280" class="draw-circle"/>
+          <text x="50" y="58" font-family="'Cabinet Grotesk', sans-serif" font-size="28" font-weight="700" fill="#ff6900" text-anchor="middle">CE</text>
+        </svg>
       </div>
+      <div class="startup-text">Cell City Mi Store</div>
+      <button class="skip-btn" onclick="dismissStartup()">Skip &rarr;</button>
+    </div>
+  </div>
+
+  <!-- Concept Demo Integrity Notice -->
+  <aside class="concept-banner" role="complementary">
+    <div class="banner-inner">
+      <span class="banner-pill">STARTER HIGH-SPEED DEMO</span>
+      <span class="banner-text">Independent trial portfolio design crafted by <strong>SHIV Web Studio</strong>. Zero financial transactions.</span>
+      <a href="https://wa.me/916267686575?text=I%20saw%20the%20demo%20website%20of%20Cell%20City%20Mi%20Store%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV" target="_blank" rel="noopener noreferrer" class="banner-action">Get a Website Like This &rarr;</a>
+    </div>
+  </aside>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-mark">CE</span>
+        <span class="logo-text">Cell City Mi Store</span>
+      </a>
+      <nav class="nav-links">
+        
+        <a href="#showcase">Offerings</a>
+        <a href="#interactive-tool">Quick Inquire</a>
+        <a href="#about">Location & About</a>
+        
+        <a href="https://wa.me/916267686575?text=I%20saw%20the%20demo%20website%20of%20Cell%20City%20Mi%20Store%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV" target="_blank" rel="noopener noreferrer" class="btn btn-wa-nav">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          Direct WhatsApp
+        </a>
+      </nav>
     </div>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero-section">
-    <div class="container">
-      <span class="hero-badge">STARTER DEMO • DHANPURI, SHAHDOL, MP</span>
+    <div class="hero-backdrop-glow"></div>
+    <div class="container hero-content">
+      <div class="hero-tag">MI AUTHORIZED SHOWROOM & ECOSYSTEM STORE • DHANPURI, SHAHDOL, MP</div>
       <h1 class="hero-title">Cell City Mi Store</h1>
       <p class="hero-tagline">Smartphones, Laptops, Robot Vacuums & Smart Living</p>
-      <div class="hero-btns">
-        <a href="#offerings" class="btn-main">View Top Offerings &darr;</a>
-        <a href="https://wa.me/916267686575?text=I%20saw%20the%20demo%20website%20of%20Cell%20City%20Mi%20Store%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV" target="_blank" rel="noopener noreferrer" class="btn-secondary">Message on WhatsApp</a>
+      <p class="hero-desc">High-octane tech storefront showcasing Xiaomi ecosystem hardware in Dhanpuri. Includes genuine product verification, warranty registration help, and live festival pricing alerts.</p>
+      
+      <div class="hero-ctas">
+        <a href="#interactive-tool" class="btn btn-primary">
+          <span>Inquire Stock Availability in Dhanpuri &rarr;</span>
+        </a>
+        <a href="https://wa.me/916267686575?text=I%20saw%20the%20demo%20website%20of%20Cell%20City%20Mi%20Store%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+          <span>WhatsApp Inquiry</span>
+        </a>
+      </div>
+
+      <div class="trust-bar">
+        <div class="trust-item">
+          <span class="trust-num">100%</span>
+          <span class="trust-lbl">Mobile Responsive</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-num">&lt;850ms</span>
+          <span class="trust-lbl">Edge CDN Speed</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-num">Direct</span>
+          <span class="trust-lbl">WhatsApp Conversion</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <main class="container" id="offerings">
-    <div class="section-title">
-      <h2>Best-Selling Offerings & Prices</h2>
-      <p>Direct pricing and immediate stock inquiries for Dhanpuri, Shahdol, MP</p>
-    </div>
-    <div class="products-grid">
+  <!-- Showcase Products / Services Catalog -->
+  <section class="showcase-section" id="showcase">
+    <div class="container">
+      <div class="section-badge">FEATURED CATALOG & OFFERINGS</div>
+      <h2>Signature Offerings & Collections</h2>
+      <p class="section-lead">Handcrafted selections curated for customers across Dhanpuri, Shahdol, MP.</p>
       
-        <div class="product-card">
+      <div class="products-grid">
+        
+        <div class="product-card" data-category="smartphones">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80" alt="Redmi Note 5G Series" loading="lazy">
-            <span class="card-tag">Smartphones</span>
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80" alt="Redmi Note 5G Series" class="product-img" loading="lazy">
+            <div class="card-badge">Smartphones</div>
           </div>
           <div class="card-body">
             <h3>Redmi Note 5G Series</h3>
-            <p>200MP OIS camera, 120W HyperCharge, curved AMOLED 1.5K display.</p>
-            <div class="card-bottom">
-              <span class="price-txt">Official Store Price</span>
-              <a href="https://wa.me/916267686575?text=Hello%2C%20I%20want%20to%20order/inquire%20about%20Redmi%20Note%205G%20Series%20%28Official%20Store%20Price%29%20seen%20on%20Cell%20City%20Mi%20Store%27s%20starter%20site." target="_blank" rel="noopener noreferrer" class="btn-order-card">Order via WhatsApp &rarr;</a>
+            <p class="card-desc">200MP OIS camera, 120W HyperCharge, curved AMOLED 1.5K display.</p>
+            <div class="card-footer">
+              <span class="price-tag">Official Store Price</span>
+              <a href="https://wa.me/916267686575?text=I%20saw%20Redmi%20Note%205G%20Series%20on%20Cell%20City%20Mi%20Store%27s%20demo%20website%2C%20please%20share%20details%20%26%20pricing." target="_blank" rel="noopener noreferrer" class="btn-item-wa" title="Inquire on WhatsApp">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                Inquire
+              </a>
             </div>
           </div>
         </div>
-            
-        <div class="product-card">
+        
+        <div class="product-card" data-category="tablets">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=600&q=80" alt="Xiaomi Pad & Stylus" loading="lazy">
-            <span class="card-tag">Tablets</span>
+            <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=600&q=80" alt="Xiaomi Pad & Stylus" class="product-img" loading="lazy">
+            <div class="card-badge">Tablets</div>
           </div>
           <div class="card-body">
             <h3>Xiaomi Pad & Stylus</h3>
-            <p>11-inch 144Hz 2.8K display, Snapdragon processor, quad speakers with Dolby Atmos.</p>
-            <div class="card-bottom">
-              <span class="price-txt">From Rs. 21,999</span>
-              <a href="https://wa.me/916267686575?text=Hello%2C%20I%20want%20to%20order/inquire%20about%20Xiaomi%20Pad%20%26%20Stylus%20%28From%20Rs.%2021%2C999%29%20seen%20on%20Cell%20City%20Mi%20Store%27s%20starter%20site." target="_blank" rel="noopener noreferrer" class="btn-order-card">Order via WhatsApp &rarr;</a>
+            <p class="card-desc">11-inch 144Hz 2.8K display, Snapdragon processor, quad speakers with Dolby Atmos.</p>
+            <div class="card-footer">
+              <span class="price-tag">From Rs. 21,999</span>
+              <a href="https://wa.me/916267686575?text=I%20saw%20Xiaomi%20Pad%20%26%20Stylus%20on%20Cell%20City%20Mi%20Store%27s%20demo%20website%2C%20please%20share%20details%20%26%20pricing." target="_blank" rel="noopener noreferrer" class="btn-item-wa" title="Inquire on WhatsApp">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                Inquire
+              </a>
             </div>
           </div>
         </div>
-            
-        <div class="product-card">
+        
+        <div class="product-card" data-category="smart home">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80" alt="Mi Smart Air Purifier & Robot Vacuum" loading="lazy">
-            <span class="card-tag">Smart Home</span>
+            <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80" alt="Mi Smart Air Purifier & Robot Vacuum" class="product-img" loading="lazy">
+            <div class="card-badge">Smart Home</div>
           </div>
           <div class="card-body">
             <h3>Mi Smart Air Purifier & Robot Vacuum</h3>
-            <p>True HEPA filtration, smart app control, automated mapping & mop integration.</p>
-            <div class="card-bottom">
-              <span class="price-txt">Best Deals</span>
-              <a href="https://wa.me/916267686575?text=Hello%2C%20I%20want%20to%20order/inquire%20about%20Mi%20Smart%20Air%20Purifier%20%26%20Robot%20Vacuum%20%28Best%20Deals%29%20seen%20on%20Cell%20City%20Mi%20Store%27s%20starter%20site." target="_blank" rel="noopener noreferrer" class="btn-order-card">Order via WhatsApp &rarr;</a>
+            <p class="card-desc">True HEPA filtration, smart app control, automated mapping & mop integration.</p>
+            <div class="card-footer">
+              <span class="price-tag">Best Deals</span>
+              <a href="https://wa.me/916267686575?text=I%20saw%20Mi%20Smart%20Air%20Purifier%20%26%20Robot%20Vacuum%20on%20Cell%20City%20Mi%20Store%27s%20demo%20website%2C%20please%20share%20details%20%26%20pricing." target="_blank" rel="noopener noreferrer" class="btn-item-wa" title="Inquire on WhatsApp">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                Inquire
+              </a>
             </div>
           </div>
         </div>
-            
-        <div class="product-card">
+        
+        <div class="product-card" data-category="accessories">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=600&q=80" alt="Fast Charge Power Banks & GaN Adapters" loading="lazy">
-            <span class="card-tag">Accessories</span>
+            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=600&q=80" alt="Fast Charge Power Banks & GaN Adapters" class="product-img" loading="lazy">
+            <div class="card-badge">Accessories</div>
           </div>
           <div class="card-body">
             <h3>Fast Charge Power Banks & GaN Adapters</h3>
-            <p>20000mAh 33W fast output, metallic casing with 9-layer circuit protection.</p>
-            <div class="card-bottom">
-              <span class="price-txt">From Rs. 899</span>
-              <a href="https://wa.me/916267686575?text=Hello%2C%20I%20want%20to%20order/inquire%20about%20Fast%20Charge%20Power%20Banks%20%26%20GaN%20Adapters%20%28From%20Rs.%20899%29%20seen%20on%20Cell%20City%20Mi%20Store%27s%20starter%20site." target="_blank" rel="noopener noreferrer" class="btn-order-card">Order via WhatsApp &rarr;</a>
+            <p class="card-desc">20000mAh 33W fast output, metallic casing with 9-layer circuit protection.</p>
+            <div class="card-footer">
+              <span class="price-tag">From Rs. 899</span>
+              <a href="https://wa.me/916267686575?text=I%20saw%20Fast%20Charge%20Power%20Banks%20%26%20GaN%20Adapters%20on%20Cell%20City%20Mi%20Store%27s%20demo%20website%2C%20please%20share%20details%20%26%20pricing." target="_blank" rel="noopener noreferrer" class="btn-item-wa" title="Inquire on WhatsApp">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                Inquire
+              </a>
             </div>
           </div>
         </div>
-            
+        
+      </div>
     </div>
+  </section>
 
-    <div class="starter-info-box">
-      <h2>Visit Us in Dhanpuri, Shahdol, MP</h2>
-      <p class="location-p">📍 Main Market Road, Dhanpuri, Shahdol, MP 484114 • Open 7 Days (10:00 AM – 9:00 PM)</p>
-      <a href="https://maps.google.com/?q=Cell%20City%20Mi%20Store%20Main%20Market%20Road%2C%20Dhanpuri%2C%20Shahdol%2C%20MP%20484114" target="_blank" rel="noopener noreferrer" class="btn-secondary">Open Google Maps Directions ↗</a>
+  
+
+  
+  <!-- Interactive Calculator & Appointment Booking Section -->
+  <section class="interactive-section" id="interactive-tool">
+    <div class="container">
+      <div class="calculator-card">
+        <div class="calc-header">
+          <span class="calc-badge">DIRECT WHATSAPP CONVERTER</span>
+          <h2>Inquire Stock Availability in Dhanpuri</h2>
+          <p class="calc-subtitle">Instant quotation & priority reservation sent directly to our business desk.</p>
+        </div>
+        
+        <form id="prospect-form" onsubmit="handleInquiry(event)" class="calc-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="client-name">Your Full Name</label>
+              <input type="text" id="client-name" placeholder="e.g. Ramesh Sharma" required>
+            </div>
+            <div class="form-group">
+              <label for="client-phone">Phone / WhatsApp Number</label>
+              <input type="tel" id="client-phone" placeholder="e.g. +91 98765 43210" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="service-tier">Select Inquiry Category</label>
+              <select id="service-tier">
+                <option value="Redmi Note 5G Series">Redmi Note 5G Series (Official Store Price)</option>
+                <option value="Xiaomi Pad & Stylus">Xiaomi Pad & Stylus (From Rs. 21,999)</option>
+                <option value="Mi Smart Air Purifier & Robot Vacuum">Mi Smart Air Purifier & Robot Vacuum (Best Deals)</option>
+                <option value="Fast Charge Power Banks & GaN Adapters">Fast Charge Power Banks & GaN Adapters (From Rs. 899)</option>
+                <option value="Custom Bespoke Order">Custom Consultation & Bespoke Requirements</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="preferred-date">Preferred Date / Slot</label>
+              <input type="date" id="preferred-date">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="client-notes">Specific Requests or Notes (Optional)</label>
+            <textarea id="client-notes" rows="3" placeholder="Tell us about your requirements, guest count, or customization preferences..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            <span>Send Direct WhatsApp Inquiry &rarr;</span>
+          </button>
+        </form>
+      </div>
     </div>
-  </main>
+  </section>
+    
 
-  <div class="mobile-sticky-bar">
-    <a href="https://maps.google.com/?q=Cell%20City%20Mi%20Store%20Main%20Market%20Road%2C%20Dhanpuri%2C%20Shahdol%2C%20MP%20484114" target="_blank" rel="noopener noreferrer" class="sticky-btn maps">📍 Maps</a>
-    <a href="https://wa.me/916267686575?text=I%20saw%20the%20demo%20website%20of%20Cell%20City%20Mi%20Store%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV" target="_blank" rel="noopener noreferrer" class="sticky-btn whatsapp">💬 WhatsApp Order</a>
-  </div>
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-text-col">
+        <div class="section-badge">ESTABLISHED EXCELLENCE</div>
+        <h2>Proudly Serving Dhanpuri, Shahdol, MP</h2>
+        <p class="about-p">
+          At <strong>Cell City Mi Store</strong>, we bring uncompromising quality, authentic service, and dedicated customer care to every client interaction. Whether visiting our physical premises at Main Market Road, Dhanpuri, Shahdol, MP 484114 or connecting with us online, your satisfaction remains our hallmark.
+        </p>
+        <p class="about-p">
+          This digital experience was architected by <strong>SHIV Web Studio</strong> to provide seamless speed, mobile-first clarity, and direct WhatsApp connectivity without bloated middleware.
+        </p>
+        <div class="about-highlights">
+          <span class="about-pill">✓ Verified Local Business</span>
+          <span class="about-pill">✓ Direct Owner Access</span>
+          <span class="about-pill">✓ Zero Intermediary Fees</span>
+        </div>
+      </div>
+      <div class="about-card-col">
+        <div class="stat-box">
+          <div class="stat-number">4.9★</div>
+          <div class="stat-text">Customer Satisfaction Rating</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">100%</div>
+          <div class="stat-text">Authenticity Guaranteed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Sticky Action Badge -->
+  <aside class="floating-shiv-badge" role="complementary">
+    <a href="https://wa.me/916267686575?text=I%20saw%20the%20demo%20website%20of%20Cell%20City%20Mi%20Store%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV" target="_blank" rel="noopener noreferrer" class="badge-link">
+      <span class="badge-icon">⚡</span>
+      <span class="badge-text">Built by SHIV Web Studio — Order Website &rarr;</span>
+    </a>
+  </aside>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-col brand-col">
+        <h3>Cell City Mi Store</h3>
+        <p>Smartphones, Laptops, Robot Vacuums & Smart Living</p>
+        <p class="loc-p">📍 Main Market Road, Dhanpuri, Shahdol, MP 484114</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#showcase">Offerings</a></li>
+          <li><a href="#interactive-tool">Inquire</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <p>Direct WhatsApp: <strong>+91 6267686575</strong></p>
+        <a href="https://wa.me/916267686575?text=I%20saw%20the%20demo%20website%20of%20Cell%20City%20Mi%20Store%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+          WhatsApp Message &rarr;
+        </a>
+      </div>
+    </div>
+    <div class="container copyright-bar">
+      <p>© 2026 Cell City Mi Store. Independent trial concept by <a href="https://shiv-portfoliopreview.vercel.app/">SHIV Web Studio</a>.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>

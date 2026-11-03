@@ -44,17 +44,25 @@ Inspired by royal Indian luxury ateliers (Sabyasachi, Raw Mango) and contemporar
 
 ---
 
-## 📂 Repository Structure
+## 📂 9-Page Flagship Architecture
 
 ```
 lakshmi-saree-sansar/
-├── index.html       # Semantic HTML5 markup with JSON-LD ClothingStore schema
-├── styles.css       # High-fashion responsive stylesheet & micro-animations
-├── app.js           # Client interaction, fabric intro, modal, and bag drawer
-├── vercel.json      # Vercel edge caching and security headers
-├── robots.txt       # Search engine crawler instructions
-├── sitemap.xml      # Canonical XML sitemap for SEO
-└── README.md        # Portfolio documentation and deployment instructions
+├── index.html            # 1. Grand Haute Couture Flagship Home (Silk fabric reveal, hero video simulation)
+├── collections.html      # 2. The Royal Saree Treasury (Filterable by Banarasi, Kanjivaram, Chanderi, Organza)
+├── bridal-studio.html    # 3. The Imperial Bridal Lounge (5 ceremonial trousseau drapes & Muhurat styling)
+├── virtual-tryon.html    # 4. Interactive AI Virtual Draping Studio (Live SVG/mannequin drape simulator)
+├── lookbook.html         # 5. The Royal Wedding Editorial Lookbook (High-fashion editorial spreads & PDF guide)
+├── custom-couture.html   # 6. Bespoke Weave Atelier (Interactive custom saree builder & price calculator)
+├── heritage.html         # 7. 75 Years of Handloom Lineage (Varanasi roots, Silk Mark & Zari flame purity test)
+├── vip-appointment.html  # 8. VIP Bridal Draping Suite Booking (Private family suite & hospitality scheduler)
+├── contact.html          # 9. Flagship Showroom & Salon (Shraja Mall Burhar, valet parking & Google Maps)
+├── styles.css            # Unified luxury design system, keyframe shimmer, and responsive styling
+├── app.js                # Full client interaction controller, try-on simulator, custom atelier math, bag drawer
+├── vercel.json           # Vercel edge caching and iframe permissions
+├── robots.txt            # Search engine directives
+├── sitemap.xml           # 9-page canonical XML sitemap
+└── README.md             # Complete flagship documentation
 ```
 
 ---
