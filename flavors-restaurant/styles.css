@@ -596,3 +596,131 @@ h2 {
   .tool-card { padding: 1.5rem; }
   .footer-bottom { flex-direction: column; text-align: center; }
 }
+
+/* Enhanced Food Photography & Gallery Styles */
+.hero-section {
+  position: relative;
+  background-image: linear-gradient(180deg, rgba(10, 6, 8, 0.82) 0%, rgba(10, 6, 8, 0.95) 100%), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80');
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.product-card {
+  padding: 0;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.card-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 195px;
+  overflow: hidden;
+  background: #1e1e24;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.08);
+}
+
+.card-img-wrap .card-badge {
+  position: absolute;
+  top: 0.8rem;
+  left: 0.8rem;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 0;
+}
+
+.card-body {
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-body h3 {
+  font-size: 1.18rem;
+  margin-bottom: 0.4rem;
+}
+
+.card-desc {
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  margin-bottom: 1.2rem;
+  flex: 1;
+}
+
+/* Gallery Section */
+.gallery-section {
+  padding: 4.5rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.gallery-card {
+  position: relative;
+  height: 220px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-card:hover .gallery-img {
+  transform: scale(1.06);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.85) 100%);
+  display: flex;
+  align-items: flex-end;
+  padding: 1.2rem;
+  color: #fff;
+  font-size: 0.92rem;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+/* Mobile UX Refinements */
+@media (max-width: 768px) {
+  .card-img-wrap {
+    height: 180px;
+  }
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .gallery-card {
+    height: 190px;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+  }
+}
