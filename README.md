@@ -1,7 +1,7 @@
 # SHIV Web Studio — 37 Production Web Applications Suite 🌟
 
 [![Master Repository](https://img.shields.io/badge/GitHub-shivamgupt--2010%2Fshiv--deployment-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shivamgupt-2010/shiv-deployment)
-[![Vercel Deployment](https://img.shields.io/badge/Vercel-Edge%20Ready-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://shiv-deployment.vercel.app/)
+[![Vercel Deployment](https://img.shields.io/badge/Vercel-Edge%20Ready-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://shiv-portfoliopreview.vercel.app/)
 [![Total Projects](https://img.shields.io/badge/Websites-37%20Active-brightgreen?style=for-the-badge)](#)
 [![Theme](https://img.shields.io/badge/Aesthetics-Warm%20Soothing%20Bright-f59e0b?style=for-the-badge)](#)
 [![Tech Stack](https://img.shields.io/badge/Stack-HTML5%20%7C%20CSS3%20%7C%20ES6%20%7C%20JSON--LD-blue?style=for-the-badge)](#)
@@ -16,7 +16,7 @@ Every single website is **zero-dependency**, **pure static**, and equipped with 
 ## 🖥️ Live Master Showcase Portal
 
 Experience the entire 37-website suite from a unified interactive dashboard with warm luminous aesthetics:
-👉 **`https://shiv-deployment.vercel.app/`**
+👉 **`https://shiv-portfoliopreview.vercel.app/`**
 
 - **🎨 Warm & Soothing Bright Aesthetics**: Crafted in luminous alabaster (`#fcfaf7`), cashmere ivory (`#f7f2ea`), honey amber (`#d97706`), sunset saffron (`#ea580c`), and rich velvet espresso typography (`#1c1511`) for eye comfort and luxury polish.
 - **📱 Multi-Device Viewport Simulator**: Test any website in Mobile (390px with realistic phone bezels), Tablet (768px), or Desktop viewports live with real-time resizing.

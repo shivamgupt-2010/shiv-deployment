@@ -1,5 +1,21 @@
 // SHIV Web Studio - Master Showcase Portal Interactive Controller
 let currentCategory = 'all';
+const prefetchedUrls = new Set();
+
+// High-speed resource prefetcher for demo websites
+function prefetchDemo(url) {
+  if (!url || prefetchedUrls.has(url)) return;
+  prefetchedUrls.add(url);
+  try {
+    const link = document.createElement('link');
+    link.rel = 'prefetch';
+    link.as = 'document';
+    link.href = url;
+    document.head.appendChild(link);
+  } catch (e) {
+    // Graceful fallback
+  }
+}
 
 function setCategoryFilter(cat, btn) {
   currentCategory = cat;
@@ -63,7 +79,7 @@ function clearSearch() {
   filterProspects();
 }
 
-// Modal Viewport Controller
+// Modal Viewport Controller with High-Speed Loader
 function openPreview(urlPath, siteName) {
   const modal = document.getElementById('preview-modal');
   const iframe = document.getElementById('preview-iframe');
@@ -73,6 +89,8 @@ function openPreview(urlPath, siteName) {
   if (modal && iframe) {
     if (titleElem) titleElem.textContent = `${siteName} (Live Simulator)`;
     if (extLink) extLink.href = urlPath;
+    
+    // Set src and display
     iframe.src = urlPath;
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
@@ -106,6 +124,37 @@ function setViewport(width, btn) {
     }
   }
 }
+
+// Attach automatic hover prefetch to all card preview triggers
+document.addEventListener('DOMContentLoaded', () => {
+  const triggers = document.querySelectorAll('.card-actions button, .card-actions a');
+  triggers.forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      const card = el.closest('.prospect-card');
+      if (card) {
+        const previewBtn = card.querySelector('button[onclick*="openPreview"]');
+        if (previewBtn) {
+          const match = previewBtn.getAttribute('onclick').match(/openPreview\(['"]([^'"]+)['"]/);
+          if (match && match[1]) {
+            prefetchDemo(match[1]);
+          }
+        }
+      }
+    });
+    el.addEventListener('touchstart', () => {
+      const card = el.closest('.prospect-card');
+      if (card) {
+        const previewBtn = card.querySelector('button[onclick*="openPreview"]');
+        if (previewBtn) {
+          const match = previewBtn.getAttribute('onclick').match(/openPreview\(['"]([^'"]+)['"]/);
+          if (match && match[1]) {
+            prefetchDemo(match[1]);
+          }
+        }
+      }
+    }, { passive: true });
+  });
+});
 
 // Close modal on backdrop click or Escape key
 window.addEventListener('click', (e) => {
