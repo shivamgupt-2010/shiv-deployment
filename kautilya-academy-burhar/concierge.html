@@ -10,10 +10,17 @@
 </head>
 <body>
   
+  <!-- Ambient Floating Orbs -->
+  <div class="ambient-orb orb-1"></div>
+  <div class="ambient-orb orb-2"></div>
+
+  <!-- Announcement Bar -->
   <div class="lux-announcement">
     ✨ HAUTE-COUTURE 7-PAGE FLAGSHIP SUITE • Engineered by SHIV Web Studio (+91 6267686575)
     <a href="https://wa.me/916267686575?text=I%20saw%20the%207-page%20Premium%20Luxury%20demo%20website%20of%20Kautilya%20Academy%20%28Burhar%29%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV" target="_blank">Commission A Flagship Website &rarr;</a>
   </div>
+
+  <!-- Luxury Sticky Header -->
   <header class="lux-header">
     <div class="container lux-header-flex">
       <a href="index.html" class="lux-brand">
@@ -23,12 +30,26 @@
           <span>HAUTE LUXURY • BURHAR, MADHYA PRADESH</span>
         </div>
       </a>
+
+      <!-- Desktop Navigation Links -->
       <nav class="lux-nav">
         <a href="index.html" class="">Home</a><a href="collections.html" class="">Collections</a><a href="lookbook.html" class="">Lookbook</a><a href="concierge.html" class="active">VIP Concierge</a><a href="bespoke.html" class="">Bespoke Atelier</a><a href="heritage.html" class="">Heritage</a><a href="contact.html" class="">Showroom</a>
       </nav>
-      <a href="concierge.html" class="btn-vip-concierge">
-        VIP Concierge
-      </a>
+
+      <div style="display:flex; align-items:center; gap:0.75rem;">
+        <a href="concierge.html" class="btn-vip-concierge" style="display:inline-flex;">
+          👑 VIP Concierge
+        </a>
+        <button class="lux-mobile-toggle" onclick="toggleLuxMobileMenu()" aria-label="Toggle Navigation Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Glassmorphism Dropdown Menu -->
+    <div class="lux-mobile-menu" id="lux-mobile-menu">
+      <a href="index.html" class=""><span>Home</span> <span>&rarr;</span></a><a href="collections.html" class=""><span>Collections</span> <span>&rarr;</span></a><a href="lookbook.html" class=""><span>Lookbook</span> <span>&rarr;</span></a><a href="concierge.html" class="active"><span>VIP Concierge</span> <span>&rarr;</span></a><a href="bespoke.html" class=""><span>Bespoke Atelier</span> <span>&rarr;</span></a><a href="heritage.html" class=""><span>Heritage</span> <span>&rarr;</span></a><a href="contact.html" class=""><span>Showroom</span> <span>&rarr;</span></a>
+      <a href="concierge.html" style="color:var(--gold-primary); font-weight:700; margin-top:0.5rem;">👑 Book VIP Concierge Trial &rarr;</a>
     </div>
   </header>
         
@@ -41,7 +62,7 @@
   </section>
   <main class="container lux-section">
     <div class="concierge-card">
-      <h2 style="font-family:var(--font-serif); color:#fff; text-align:center;">Schedule Consultation</h2>
+      <h2 style="font-family:var(--font-serif); color:#fff; text-align:center;">Schedule Private Consultation</h2>
       <form class="concierge-form" onsubmit="event.preventDefault(); alert('Your VIP viewing request has been received. Our concierge will confirm via WhatsApp within 15 minutes.'); window.open('https://wa.me/916267686575?text=' + encodeURIComponent('VIP Concierge Request for ' + document.getElementById('vip_name').value + ' at Kautilya Academy (Burhar)'), '_blank');">
         <div class="concierge-field">
           <label>Full Name</label>
@@ -88,6 +109,21 @@
       © 2026 Kautilya Academy (Burhar). Independent 7-Page Haute Couture Architecture engineered by <a href="https://wa.me/916267686575" target="_blank" style="color:var(--gold-primary);">SHIV Web Studio (Shivam Gupta)</a>.
     </div>
   </footer>
+
+  <!-- Mobile Sticky Bottom Navigation Bar -->
+  <div class="lux-mobile-bar">
+    <a href="collections.html" class="lux-mobile-btn ">💎 Items</a>
+    <a href="lookbook.html" class="lux-mobile-btn ">📖 Lookbook</a>
+    <a href="concierge.html" class="lux-mobile-btn concierge-cta">👑 Concierge</a>
+    <a href="https://wa.me/916267686575?text=I%20saw%20the%207-page%20Premium%20Luxury%20demo%20website%20of%20Kautilya%20Academy%20%28Burhar%29%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV" target="_blank" rel="noopener noreferrer" class="lux-mobile-btn wa-cta">💬 WhatsApp</a>
+  </div>
+
+  <script>
+    function toggleLuxMobileMenu() {
+      const m = document.getElementById('lux-mobile-menu');
+      if (m) m.classList.toggle('active');
+    }
+  </script>
         
 </body>
 </html>

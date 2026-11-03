@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Live Package & Price Calculator — Studio Emroz Art</title>
+  <title>Live Price & Package Calculator — Studio Emroz Art</title>
   <meta name="google-site-verification" content="29XGiGGVrfl2Ff3y75voxCAikcCRNu1KlOur1tK6iuM" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
@@ -11,8 +11,8 @@
 <body>
   
   <div class="top-notice-bar">
-    🔵 MID-RANGE PROFESSIONAL DEMO (5 Multi-Pages) • Engineered by SHIV Web Studio 
-    <a href="https://wa.me/916267686575?text=I%20saw%20the%20demo%20website%20of%20Studio%20Emroz%20Art%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV" target="_blank">Order This Architecture &rarr;</a>
+    ⚡ Official Demo Concept for Studio Emroz Art (Shahdol, Madhya Pradesh) • Engineered by <strong>SHIV Web Studio</strong> (+91 6267686575)
+    <a href="https://wa.me/916267686575?text=I%20saw%20the%205-page%20Professional%20demo%20website%20of%20Studio%20Emroz%20Art%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV" target="_blank">Order Similar Website &rarr;</a>
   </div>
   <header class="site-header">
     <div class="container header-flex">
@@ -20,72 +20,133 @@
         <div class="brand-logo-sq">ST</div>
         <div class="brand-title-box">
           <strong>Studio Emroz Art</strong>
-          <span>SHAHDOL, MADHYA PRADESH</span>
+          <span>PROFESSIONAL STOREFRONT • SHAHDOL, MADHYA PRADESH</span>
         </div>
       </a>
-      <nav class="nav-menu">
-        <a href="index.html" class="nav-link ">Home</a><a href="catalog.html" class="nav-link ">Full Catalog</a><a href="calculator.html" class="nav-link active">Package Calculator</a><a href="gallery.html" class="nav-link ">Photo Gallery</a><a href="contact.html" class="nav-link ">Contact & Visit</a>
-      </nav>
-      <a href="https://wa.me/916267686575?text=I%20saw%20the%20demo%20website%20of%20Studio%20Emroz%20Art%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV" target="_blank" rel="noopener noreferrer" class="header-cta">
-        WhatsApp Desk
-      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link ">Home</a></li><li><a href="catalog.html" class="nav-link ">Catalog</a></li><li><a href="calculator.html" class="nav-link active">Calculator</a></li><li><a href="gallery.html" class="nav-link ">Gallery</a></li><li><a href="contact.html" class="nav-link ">Contact</a></li>
+      </ul>
+      <div style="display:flex; align-items:center; gap:0.75rem;">
+        <a href="https://wa.me/916267686575?text=I%20saw%20the%205-page%20Professional%20demo%20website%20of%20Studio%20Emroz%20Art%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV" target="_blank" rel="noopener noreferrer" class="header-cta">
+          💬 WhatsApp
+        </a>
+        <button class="mobile-nav-toggle" onclick="toggleMidNav()" aria-label="Toggle Navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-nav-menu" id="mid-mobile-menu">
+      <a href="index.html" class=""><span>Home</span> <span>&rarr;</span></a><a href="catalog.html" class=""><span>Catalog</span> <span>&rarr;</span></a><a href="calculator.html" class="active"><span>Calculator</span> <span>&rarr;</span></a><a href="gallery.html" class=""><span>Gallery</span> <span>&rarr;</span></a><a href="contact.html" class=""><span>Contact</span> <span>&rarr;</span></a>
     </div>
   </header>
-            
+        
   <section class="page-hero">
     <div class="container">
-      <h1>Live Cost & Package Estimator</h1>
-      <p>Customize your options, calculate real-time estimated pricing, and send directly to our WhatsApp desk.</p>
+      <span class="hero-tag">PAGE 03 OF 05 • INTERACTIVE TOOL</span>
+      <h1>Instant Package & Price Calculator</h1>
+      <p>Configure your requirements and get an instant cost estimation for Shahdol, Madhya Pradesh.</p>
     </div>
   </section>
-  <main class="container" style="padding: 2.5rem 0;">
+  <main class="container">
     <div class="calc-box">
+      <h2 style="font-family:var(--font-heading); margin-bottom:1.5rem; text-align:center;">Configure Your Estimate</h2>
       <div class="calc-row">
         <div class="calc-field">
-          <label>Select Core Service / Item</label>
-          <select id="calc-service" onchange="updateCalc()">
-            <option value="2,999">Creative Studio Portrait Session (Rs. 2,999)</option><option value="5,999">Maternity & Newborn Moments (Rs. 5,999)</option><option value="Day Rate">Commercial Fashion Lookbook (Day Rate)</option><option value="From 1,499">Fine Art Canvas Wall Prints (From Rs. 1,499)</option>
+          <label>1. Photography Session Tier:</label>
+          <select id="calc-sel-1" onchange="calcTotal()">
+            <option value="18000" data-name="Pre-Wedding Cinematic Outdoor Shoot (Rs. 18,000)">Pre-Wedding Cinematic Outdoor Shoot (Rs. 18,000)</option><option value="6500" data-name="Birthday / Baby Shower Portrait Session (Rs. 6,500)">Birthday / Baby Shower Portrait Session (Rs. 6,500)</option><option value="25000" data-name="Full 1-Day Wedding Traditional Coverage (Rs. 25,000)">Full 1-Day Wedding Traditional Coverage (Rs. 25,000)</option>
           </select>
         </div>
         <div class="calc-field">
-          <label>Quantity / Unit Scope</label>
-          <input type="number" id="calc-qty" value="1" min="1" max="50" onchange="updateCalc()" oninput="updateCalc()">
+          <label>2. Deliverables & Drone Add-on:</label>
+          <select id="calc-sel-2" onchange="calcTotal()">
+            <option value="7500" data-name="4K Cinematic Drone Aerial Video (+Rs. 7,500)">4K Cinematic Drone Aerial Video (+Rs. 7,500)</option><option value="5000" data-name="Handcrafted Embossed Photo Book (30 pgs) (+Rs. 5,000)">Handcrafted Embossed Photo Book (30 pgs) (+Rs. 5,000)</option><option value="0" data-name="Digital Copies Only">Digital Copies Only</option>
+          </select>
         </div>
       </div>
-      <div class="calc-field" style="margin-bottom: 1.2rem;">
-        <label>Add-On Priority Service</label>
-        <select id="calc-addon" onchange="updateCalc()">
-          <option value="0">Standard Service (Included)</option>
-          <option value="200">Express Priority Order (+Rs. 200)</option>
-          <option value="500">VIP Personalized Customization (+Rs. 500)</option>
-        </select>
+      <div class="calc-row">
+        <div class="calc-field">
+          <label>3. Shoot Days:</label>
+          <input type="number" id="calc-qty" value="1" min="1" max="500" oninput="calcTotal()">
+        </div>
+        <div class="calc-field">
+          <label>4. Your Contact Name:</label>
+          <input type="text" id="calc-name" placeholder="Full Name">
+        </div>
       </div>
       <div class="calc-total-bar">
-        <span style="font-size:0.85rem; color:#94a3b8;">Estimated Cost Total:</span>
-        <div class="calc-total-num" id="calc-total-display">Rs. 0</div>
+        <span>Estimated Total Budget:</span>
+        <span class="calc-total-num" id="calc-result">Rs. 25,500</span>
       </div>
-      <button class="btn-calc-wa" onclick="sendCalcWA()">Send Estimated Quote to WhatsApp &rarr;</button>
+      <button class="btn-calc-wa" onclick="sendCalcWa()">Confirm Estimate on WhatsApp &rarr;</button>
     </div>
   </main>
-
   <script>
-    function updateCalc() {
-      const base = parseFloat(document.getElementById('calc-service').value) || 0;
-      const qty = parseInt(document.getElementById('calc-qty').value) || 1;
-      const addon = parseFloat(document.getElementById('calc-addon').value) || 0;
-      const total = (base * qty) + addon;
-      document.getElementById('calc-total-display').textContent = 'Rs. ' + total.toLocaleString();
+    function calcTotal() {
+      const s1 = parseInt(document.getElementById('calc-sel-1').value) || 0;
+      const s2 = parseInt(document.getElementById('calc-sel-2').value) || 0;
+      const q = parseInt(document.getElementById('calc-qty').value) || 1;
+      const total = (s1 + s2) * q;
+      document.getElementById('calc-result').textContent = 'Rs. ' + total.toLocaleString('en-IN');
     }
-    updateCalc();
-
-    function sendCalcWA() {
-      const sel = document.getElementById('calc-service');
-      const serviceName = sel.options[sel.selectedIndex].text;
-      const qty = document.getElementById('calc-qty').value;
-      const total = document.getElementById('calc-total-display').textContent;
-      const msg = `Hello Studio Emroz Art, I calculated an estimate on your website:\n- Option: ${serviceName}\n- Quantity: ${qty}\n- Total: ${total}\nPlease confirm availability!`;
-      window.open('https://wa.me/916267686575?text=' + encodeURIComponent(msg), '_blank');
+    function sendCalcWa() {
+      const name = document.getElementById('calc-name').value || 'Customer';
+      const s1 = document.getElementById('calc-sel-1');
+      const s2 = document.getElementById('calc-sel-2');
+      const t1 = s1.options[s1.selectedIndex].getAttribute('data-name');
+      const t2 = s2.options[s2.selectedIndex].getAttribute('data-name');
+      const total = document.getElementById('calc-result').textContent;
+      const msg = encodeURIComponent(`Estimate from Studio Emroz Art Website Calculator:
+- Name: ${name}
+- Option: ${t1}
+- Add-on: ${t2}
+- Calculated Total: ${total}`);
+      window.open(`https://wa.me/916267686575?text=${msg}`, '_blank');
     }
   </script>
+  
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Studio Emroz Art</h4>
+        <p>Fine Art Studio Portraits, Kids Photoshoots & Brand Lookbooks</p>
+        <p style="margin-top:0.75rem; font-size:0.88rem;">📍 Bhatnagar, Shahdol, MP 484001</p>
+      </div>
+      <div>
+        <h4>Quick Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="catalog.html">Full Catalog</a></li>
+          <li><a href="calculator.html">Price Calculator</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="contact.html">Visit & Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Direct Connect</h4>
+        <p>WhatsApp: +91 6267686575</p>
+        <p>Open 7 Days (10:00 AM – 9:00 PM)</p>
+        <a href="https://maps.google.com/?q=Studio%20Emroz%20Art%20Bhatnagar%2C%20Shahdol%2C%20MP%20484001" target="_blank" rel="noopener noreferrer" style="color:var(--primary); font-size:0.85rem; font-weight:700; display:inline-block; margin-top:0.6rem;">📍 Google Maps Directions &rarr;</a>
+      </div>
+    </div>
+    <div class="container" style="text-align:center; font-size:0.78rem; border-top:1px solid var(--border); padding-top:1.5rem;">
+      © 2026 Studio Emroz Art. Independent Professional Website Concept by <a href="https://wa.me/916267686575" target="_blank" style="color:var(--primary);">SHIV Web Studio (Shivam Gupta)</a>.
+    </div>
+  </footer>
+
+  <div class="mid-mobile-bar">
+    <a href="catalog.html" class="mid-mobile-btn ">📋 Catalog</a>
+    <a href="calculator.html" class="mid-mobile-btn active">🧮 Calculator</a>
+    <a href="gallery.html" class="mid-mobile-btn ">🖼️ Gallery</a>
+    <a href="https://wa.me/916267686575?text=I%20saw%20the%205-page%20Professional%20demo%20website%20of%20Studio%20Emroz%20Art%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV" target="_blank" rel="noopener noreferrer" class="mid-mobile-btn cta">💬 WhatsApp</a>
+  </div>
+
+  <script>
+    function toggleMidNav() {
+      const m = document.getElementById('mid-mobile-menu');
+      if (m) m.classList.toggle('active');
+    }
+  </script>
+        
 </body>
 </html>

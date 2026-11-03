@@ -10,10 +10,17 @@
 </head>
 <body>
   
+  <!-- Ambient Floating Orbs -->
+  <div class="ambient-orb orb-1"></div>
+  <div class="ambient-orb orb-2"></div>
+
+  <!-- Announcement Bar -->
   <div class="lux-announcement">
     ✨ HAUTE-COUTURE 7-PAGE FLAGSHIP SUITE • Engineered by SHIV Web Studio (+91 6267686575)
     <a href="https://wa.me/916267686575?text=I%20saw%20the%207-page%20Premium%20Luxury%20demo%20website%20of%20Ambey%20Collection%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV" target="_blank">Commission A Flagship Website &rarr;</a>
   </div>
+
+  <!-- Luxury Sticky Header -->
   <header class="lux-header">
     <div class="container lux-header-flex">
       <a href="index.html" class="lux-brand">
@@ -23,12 +30,26 @@
           <span>HAUTE LUXURY • BURHAR, MADHYA PRADESH</span>
         </div>
       </a>
+
+      <!-- Desktop Navigation Links -->
       <nav class="lux-nav">
         <a href="index.html" class="">Home</a><a href="collections.html" class="">Collections</a><a href="lookbook.html" class="active">Lookbook</a><a href="concierge.html" class="">VIP Concierge</a><a href="bespoke.html" class="">Bespoke Atelier</a><a href="heritage.html" class="">Heritage</a><a href="contact.html" class="">Showroom</a>
       </nav>
-      <a href="concierge.html" class="btn-vip-concierge">
-        VIP Concierge
-      </a>
+
+      <div style="display:flex; align-items:center; gap:0.75rem;">
+        <a href="concierge.html" class="btn-vip-concierge" style="display:inline-flex;">
+          👑 VIP Concierge
+        </a>
+        <button class="lux-mobile-toggle" onclick="toggleLuxMobileMenu()" aria-label="Toggle Navigation Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Glassmorphism Dropdown Menu -->
+    <div class="lux-mobile-menu" id="lux-mobile-menu">
+      <a href="index.html" class=""><span>Home</span> <span>&rarr;</span></a><a href="collections.html" class=""><span>Collections</span> <span>&rarr;</span></a><a href="lookbook.html" class="active"><span>Lookbook</span> <span>&rarr;</span></a><a href="concierge.html" class=""><span>VIP Concierge</span> <span>&rarr;</span></a><a href="bespoke.html" class=""><span>Bespoke Atelier</span> <span>&rarr;</span></a><a href="heritage.html" class=""><span>Heritage</span> <span>&rarr;</span></a><a href="contact.html" class=""><span>Showroom</span> <span>&rarr;</span></a>
+      <a href="concierge.html" style="color:var(--gold-primary); font-weight:700; margin-top:0.5rem;">👑 Book VIP Concierge Trial &rarr;</a>
     </div>
   </header>
         
@@ -43,6 +64,7 @@
     <div class="lux-grid">
       
       <div class="lux-card">
+        <span class="lux-card-chip">EDITORIAL #01</span>
         <div class="lux-img-box" style="height:320px;"><img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80" alt="Imperial Deep Wine Zardozi Sherwani" loading="lazy"></div>
         <div class="lux-card-content">
           <h3>Imperial Deep Wine Zardozi Sherwani</h3>
@@ -54,6 +76,7 @@
       </div>
       
       <div class="lux-card">
+        <span class="lux-card-chip">EDITORIAL #02</span>
         <div class="lux-img-box" style="height:320px;"><img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" alt="Classic Italian Black-Tie Tuxedo" loading="lazy"></div>
         <div class="lux-card-content">
           <h3>Classic Italian Black-Tie Tuxedo</h3>
@@ -65,6 +88,7 @@
       </div>
       
       <div class="lux-card">
+        <span class="lux-card-chip">EDITORIAL #03</span>
         <div class="lux-img-box" style="height:320px;"><img src="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=800&q=80" alt="Royal Jodhpur Bandhgala Suit" loading="lazy"></div>
         <div class="lux-card-content">
           <h3>Royal Jodhpur Bandhgala Suit</h3>
@@ -76,6 +100,7 @@
       </div>
       
       <div class="lux-card">
+        <span class="lux-card-chip">EDITORIAL #04</span>
         <div class="lux-img-box" style="height:320px;"><img src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?auto=format&fit=crop&w=800&q=80" alt="Hand-Tied Silk Safa & Trousseau Ensemble" loading="lazy"></div>
         <div class="lux-card-content">
           <h3>Hand-Tied Silk Safa & Trousseau Ensemble</h3>
@@ -113,6 +138,21 @@
       © 2026 Ambey Collection. Independent 7-Page Haute Couture Architecture engineered by <a href="https://wa.me/916267686575" target="_blank" style="color:var(--gold-primary);">SHIV Web Studio (Shivam Gupta)</a>.
     </div>
   </footer>
+
+  <!-- Mobile Sticky Bottom Navigation Bar -->
+  <div class="lux-mobile-bar">
+    <a href="collections.html" class="lux-mobile-btn ">💎 Items</a>
+    <a href="lookbook.html" class="lux-mobile-btn active">📖 Lookbook</a>
+    <a href="concierge.html" class="lux-mobile-btn concierge-cta">👑 Concierge</a>
+    <a href="https://wa.me/916267686575?text=I%20saw%20the%207-page%20Premium%20Luxury%20demo%20website%20of%20Ambey%20Collection%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV" target="_blank" rel="noopener noreferrer" class="lux-mobile-btn wa-cta">💬 WhatsApp</a>
+  </div>
+
+  <script>
+    function toggleLuxMobileMenu() {
+      const m = document.getElementById('lux-mobile-menu');
+      if (m) m.classList.toggle('active');
+    }
+  </script>
         
 </body>
 </html>
