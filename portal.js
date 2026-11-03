@@ -3,13 +3,25 @@ let currentCategory = 'all';
 
 function setCategoryFilter(cat, btn) {
   currentCategory = cat;
-  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-  if (btn) btn.classList.add('active');
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    if (b.getAttribute('data-filter') === cat) {
+      b.classList.add('active');
+    } else {
+      b.classList.remove('active');
+    }
+  });
   filterProspects();
 }
 
 function filterProspects() {
-  const query = (document.getElementById('prospect-search').value || '').toLowerCase().trim();
+  const searchInput = document.getElementById('prospect-search');
+  const clearBtn = document.getElementById('search-clear-btn');
+  const query = (searchInput ? searchInput.value : '').toLowerCase().trim();
+  
+  if (clearBtn) {
+    clearBtn.style.display = query ? 'block' : 'none';
+  }
+
   const cards = document.querySelectorAll('.prospect-card');
   let visibleCount = 0;
 
@@ -38,6 +50,19 @@ function filterProspects() {
   }
 }
 
+function clearSearch() {
+  const searchInput = document.getElementById('prospect-search');
+  const clearBtn = document.getElementById('search-clear-btn');
+  if (searchInput) {
+    searchInput.value = '';
+    searchInput.focus();
+  }
+  if (clearBtn) {
+    clearBtn.style.display = 'none';
+  }
+  filterProspects();
+}
+
 // Modal Viewport Controller
 function openPreview(urlPath, siteName) {
   const modal = document.getElementById('preview-modal');
@@ -46,7 +71,7 @@ function openPreview(urlPath, siteName) {
   const extLink = document.getElementById('preview-ext-link');
 
   if (modal && iframe) {
-    if (titleElem) titleElem.textContent = `${siteName} (Interactive Simulation)`;
+    if (titleElem) titleElem.textContent = `${siteName} (Live Simulator)`;
     if (extLink) extLink.href = urlPath;
     iframe.src = urlPath;
     modal.style.display = 'flex';
@@ -72,10 +97,12 @@ function setViewport(width, btn) {
   if (wrapper) {
     if (typeof width === 'number') {
       wrapper.style.width = width + 'px';
-      wrapper.style.maxWidth = '100%';
+      wrapper.style.maxWidth = '95%';
+      wrapper.classList.add('is-mobile-frame');
     } else {
       wrapper.style.width = '100%';
       wrapper.style.maxWidth = '100%';
+      wrapper.classList.remove('is-mobile-frame');
     }
   }
 }
