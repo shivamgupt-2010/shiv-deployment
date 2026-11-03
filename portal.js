@@ -42,10 +42,13 @@ function filterProspects() {
   let visibleCount = 0;
 
   cards.forEach(card => {
-    const cardCat = card.getAttribute('data-category');
+    const cardCat = card.getAttribute('data-category') || '';
+    const cardTier = (card.getAttribute('data-tier') || '').toLowerCase();
     const cardData = (card.getAttribute('data-name') || '').toLowerCase();
     
-    const matchesCat = (currentCategory === 'all') || (cardCat === currentCategory);
+    const matchesCat = (currentCategory === 'all') 
+                    || (cardCat === currentCategory) 
+                    || (cardTier === currentCategory);
     const matchesQuery = !query || cardData.includes(query);
 
     if (matchesCat && matchesQuery) {
