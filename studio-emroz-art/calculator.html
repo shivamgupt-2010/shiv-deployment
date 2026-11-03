@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Package & Price Calculator — Studio Emroz Art</title>
+  <meta name="google-site-verification" content="29XGiGGVrfl2Ff3y75voxCAikcCRNu1KlOur1tK6iuM" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Space+Grotesk,+sans-serif&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="top-notice-bar">
+    🔵 MID-RANGE PROFESSIONAL DEMO (5 Multi-Pages) • Engineered by SHIV Web Studio 
+    <a href="https://wa.me/916267686575?text=I%20saw%20the%20demo%20website%20of%20Studio%20Emroz%20Art%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV" target="_blank">Order This Architecture &rarr;</a>
+  </div>
+  <header class="site-header">
+    <div class="container header-flex">
+      <a href="index.html" class="brand-group">
+        <div class="brand-logo-sq">ST</div>
+        <div class="brand-title-box">
+          <strong>Studio Emroz Art</strong>
+          <span>SHAHDOL, MADHYA PRADESH</span>
+        </div>
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link ">Home</a><a href="catalog.html" class="nav-link ">Full Catalog</a><a href="calculator.html" class="nav-link active">Package Calculator</a><a href="gallery.html" class="nav-link ">Photo Gallery</a><a href="contact.html" class="nav-link ">Contact & Visit</a>
+      </nav>
+      <a href="https://wa.me/916267686575?text=I%20saw%20the%20demo%20website%20of%20Studio%20Emroz%20Art%2C%20I%20want%20to%20know%20the%20details%20of%20websites%20made%20by%20SHIV" target="_blank" rel="noopener noreferrer" class="header-cta">
+        WhatsApp Desk
+      </a>
+    </div>
+  </header>
+            
+  <section class="page-hero">
+    <div class="container">
+      <h1>Live Cost & Package Estimator</h1>
+      <p>Customize your options, calculate real-time estimated pricing, and send directly to our WhatsApp desk.</p>
+    </div>
+  </section>
+  <main class="container" style="padding: 2.5rem 0;">
+    <div class="calc-box">
+      <div class="calc-row">
+        <div class="calc-field">
+          <label>Select Core Service / Item</label>
+          <select id="calc-service" onchange="updateCalc()">
+            <option value="2,999">Creative Studio Portrait Session (Rs. 2,999)</option><option value="5,999">Maternity & Newborn Moments (Rs. 5,999)</option><option value="Day Rate">Commercial Fashion Lookbook (Day Rate)</option><option value="From 1,499">Fine Art Canvas Wall Prints (From Rs. 1,499)</option>
+          </select>
+        </div>
+        <div class="calc-field">
+          <label>Quantity / Unit Scope</label>
+          <input type="number" id="calc-qty" value="1" min="1" max="50" onchange="updateCalc()" oninput="updateCalc()">
+        </div>
+      </div>
+      <div class="calc-field" style="margin-bottom: 1.2rem;">
+        <label>Add-On Priority Service</label>
+        <select id="calc-addon" onchange="updateCalc()">
+          <option value="0">Standard Service (Included)</option>
+          <option value="200">Express Priority Order (+Rs. 200)</option>
+          <option value="500">VIP Personalized Customization (+Rs. 500)</option>
+        </select>
+      </div>
+      <div class="calc-total-bar">
+        <span style="font-size:0.85rem; color:#94a3b8;">Estimated Cost Total:</span>
+        <div class="calc-total-num" id="calc-total-display">Rs. 0</div>
+      </div>
+      <button class="btn-calc-wa" onclick="sendCalcWA()">Send Estimated Quote to WhatsApp &rarr;</button>
+    </div>
+  </main>
+
+  <script>
+    function updateCalc() {
+      const base = parseFloat(document.getElementById('calc-service').value) || 0;
+      const qty = parseInt(document.getElementById('calc-qty').value) || 1;
+      const addon = parseFloat(document.getElementById('calc-addon').value) || 0;
+      const total = (base * qty) + addon;
+      document.getElementById('calc-total-display').textContent = 'Rs. ' + total.toLocaleString();
+    }
+    updateCalc();
+
+    function sendCalcWA() {
+      const sel = document.getElementById('calc-service');
+      const serviceName = sel.options[sel.selectedIndex].text;
+      const qty = document.getElementById('calc-qty').value;
+      const total = document.getElementById('calc-total-display').textContent;
+      const msg = `Hello Studio Emroz Art, I calculated an estimate on your website:\n- Option: ${serviceName}\n- Quantity: ${qty}\n- Total: ${total}\nPlease confirm availability!`;
+      window.open('https://wa.me/916267686575?text=' + encodeURIComponent(msg), '_blank');
+    }
+  </script>
+</body>
+</html>
