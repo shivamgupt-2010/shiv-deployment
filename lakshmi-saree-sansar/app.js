@@ -6,50 +6,118 @@
 let simulatedCart = [];
 let currentModalProductId = null;
 
+// Complete Product Registry for Interactive Modals and Cart
+window.LSS_PRODUCTS = [
+  {
+    id: 'lss-01',
+    category: 'banarasi',
+    category_name: 'Royal Banarasi',
+    title: 'Imperial Shahi Banarasi Katan Silk',
+    price: 'Rs. 18,500',
+    fabric: 'Pure 100% Katan Silk • Real Antique Gold & Copper Zari',
+    zari: 'Antique Gold & Copper tested metallic threads',
+    color: 'Deep Wine Crimson & Champagne Gold',
+    desc: 'Archival Banarasi masterpiece handwoven across 38 days in Varanasi. Features royal floral jaal work on lustrous katan silk selvedge.',
+    tag: 'Bridal Heirloom',
+    img: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'lss-02',
+    category: 'kanjivaram',
+    category_name: 'Kanjivaram Weaves',
+    title: 'Maharani Kanjivaram Temple Silk',
+    price: 'Rs. 24,900',
+    fabric: 'Triple-ply Mulberry Silk • 24K Gold Korvai Border',
+    zari: '24K Micro-Plated Gold Korvai Weave',
+    color: 'Royal Emerald Green & Amber Sunset Gold',
+    desc: 'Pure south Indian temple silk woven with traditional Korvai interlocking technique. Gopuram architectural motifs adorn the grand royal pallu.',
+    tag: 'Muhurtham Signature',
+    img: 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'lss-03',
+    category: 'chanderi',
+    category_name: 'Chanderi Tissue',
+    title: 'Gossamer Chanderi Gold Tissue Saree',
+    price: 'Rs. 12,800',
+    fabric: 'Silk Warp with Micro Zari Weft • Featherweight 420g',
+    zari: 'Featherlight Metallic Gold Luster',
+    color: 'Champagne Gold & Warm Ivory',
+    desc: 'Ethereal featherlight drape woven in Madhya Pradesh heritage clusters. Translucent gold luster reflecting ambient festive lighting.',
+    tag: 'Cocktail & Sangeet',
+    img: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'lss-04',
+    category: 'organza',
+    category_name: 'Modern Organza',
+    title: 'Handcrafted Zardozi Organza Saree',
+    price: 'Rs. 14,200',
+    fabric: 'Pure Glass Organza • Scalloped Needlework & Moti',
+    zari: 'Delicate Muted Silver & Champagne Moti',
+    color: 'Blush Rose Petal & Muted Silver',
+    desc: 'Contemporary luxury crafted for the modern bride. Scalloped floral embroidered borders hand-finished with seed pearls and micro-dabka.',
+    tag: 'Pastel Reception',
+    img: 'https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'lss-05',
+    category: 'banarasi',
+    category_name: 'Royal Banarasi',
+    title: 'Bridal Swarna Shikargah Banarasi',
+    price: 'Rs. 22,000',
+    fabric: '100% Katan Silk • Royal Hunting Jaal Pattern',
+    zari: 'Intricate Antique Sonarupa Zari',
+    color: 'Vermilion Sindoor Red & Antique Gold',
+    desc: 'Legendary Shikargah weave depicting royal animal figurines and scrolling vines across an intense vermilion silk canvas.',
+    tag: 'Archival Collector',
+    img: 'https://images.unsplash.com/photo-1566737236500-c8ac43014a67?auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: 'lss-06',
+    category: 'bridal',
+    category_name: 'Bridal Trousseau',
+    title: 'Regal Rajputana Raw Silk Trousseau Saree',
+    price: 'Rs. 28,500',
+    fabric: 'Heavy Handloom Raw Silk • Marodi Needlework & Dabka',
+    zari: 'Heavy Antique Zardozi Work',
+    color: 'Regal Magenta & Antique Gold',
+    desc: 'Opulent ceremonial trousseau drape encrusted with hand-stitched dabka, sequins, and gota patti borders crafted for wedding ceremonies.',
+    tag: 'Royal Trousseau',
+    img: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80'
+  }
+];
+
 // 1. Fabric Opening Animation Dismissal
 function dismissFabricReveal() {
   const overlay = document.getElementById('fabric-reveal');
   if (overlay) {
     overlay.classList.add('hidden');
-    setTimeout(() => overlay.remove(), 450);
+    setTimeout(() => {
+      if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
+    }, 450);
   }
 }
-
-window.addEventListener('DOMContentLoaded', () => {
-  // Auto-dismiss within 800ms respecting prefers-reduced-motion
-  setTimeout(dismissFabricReveal, 800);
-});
 
 // 2. Mobile Navigation Toggle
 function toggleMobileNav() {
   const nav = document.getElementById('nav-menu');
   if (nav) {
-    const isFlex = nav.style.display === 'flex';
-    nav.style.display = isFlex ? 'none' : 'flex';
-    if (!isFlex) {
-      nav.style.flexDirection = 'column';
-      nav.style.position = 'absolute';
-      nav.style.top = '100%';
-      nav.style.left = '0';
-      nav.style.right = '0';
-      nav.style.background = '#fdfbf7';
-      nav.style.padding = '1.5rem';
-      nav.style.borderBottom = '1px solid rgba(212, 175, 55, 0.3)';
-      nav.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
-    }
+    nav.classList.toggle('open');
   }
 }
 
 // 3. Collection Filter Tabs
 function filterSarees(category, btn) {
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.filter-tab, .filter-btn').forEach(b => b.classList.remove('active'));
   if (btn) btn.classList.add('active');
 
   const cards = document.querySelectorAll('.saree-card');
   cards.forEach(card => {
-    const cardCat = card.getAttribute('data-category');
-    if (category === 'all' || cardCat === category) {
+    const cat = card.getAttribute('data-cat') || card.getAttribute('data-category');
+    if (category === 'all' || cat === category) {
       card.style.display = 'flex';
+      card.style.animation = 'fadeIn 0.35s ease forwards';
     } else {
       card.style.display = 'none';
     }
@@ -57,11 +125,11 @@ function filterSarees(category, btn) {
 }
 
 function filterByCollection(category) {
-  const arrivals = document.getElementById('new-arrivals');
+  const arrivals = document.getElementById('new-arrivals') || document.getElementById('saree-grid');
   if (arrivals) {
     arrivals.scrollIntoView({ behavior: 'smooth' });
   }
-  const btn = document.querySelector(`.filter-btn[data-filter="${category}"]`);
+  const btn = document.querySelector(`.filter-tab[onclick*="${category}"], .filter-btn[data-filter="${category}"]`);
   filterSarees(category, btn);
 }
 
@@ -73,29 +141,47 @@ function openProductModal(productId) {
 
   currentModalProductId = productId;
 
-  document.getElementById('modal-img').src = product.img;
-  document.getElementById('modal-img').alt = product.title;
-  document.getElementById('modal-tag').textContent = product.tag;
-  document.getElementById('modal-cat').textContent = product.category_name.toUpperCase();
-  document.getElementById('modal-title').textContent = product.title;
-  document.getElementById('modal-price').textContent = product.price;
-  document.getElementById('modal-fabric').textContent = product.fabric;
-  document.getElementById('modal-zari').textContent = product.zari;
-  document.getElementById('modal-color').textContent = product.color;
-  document.getElementById('modal-desc').textContent = product.desc;
-
-  const phone = window.SHIV_PHONE || "916267686575";
-  const msg = `Namaste Lakshmi Saree Sansar, I saw the demo website created by SHIV. I want to inquire about availability and drape details for: *${product.title}* (${product.price}).`;
-  document.getElementById('modal-wa-btn').href = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+  const grid = document.getElementById('modal-grid-content');
+  if (grid) {
+    grid.innerHTML = `
+      <div class="modal-img-wrap" style="position:relative; overflow:hidden; border-radius:6px; min-height:360px;">
+        <img src="${product.img}" alt="${product.title}" style="width:100%; height:100%; max-height:450px; object-fit:cover; display:block;">
+        <span class="badge-tag" style="position:absolute; top:1rem; left:1rem; z-index:2;">${product.tag}</span>
+      </div>
+      <div class="modal-details" style="padding:1.8rem; display:flex; flex-direction:column; justify-content:space-between; background:#160306;">
+        <div>
+          <span class="saree-cat" style="color:var(--color-gold); font-size:0.75rem; font-weight:700; letter-spacing:0.15em;">${product.category_name.toUpperCase()}</span>
+          <h2 style="font-family:var(--font-serif-title); color:#fff; font-size:1.5rem; margin:0.4rem 0 0.8rem; line-height:1.3;">${product.title}</h2>
+          <div style="font-size:1.4rem; color:var(--color-gold); font-weight:700; font-family:var(--font-serif-title); margin-bottom:1rem;">${product.price}</div>
+          <div style="font-size:0.85rem; color:var(--color-beige); margin-bottom:1.2rem; line-height:1.7;">
+            <p style="margin-bottom:0.4rem;"><strong>🧵 Fabric:</strong> ${product.fabric}</p>
+            <p style="margin-bottom:0.4rem;"><strong>✨ Zari Weave:</strong> ${product.zari}</p>
+            <p style="margin-bottom:0.4rem;"><strong>🎨 Palette:</strong> ${product.color}</p>
+            <p style="margin-top:0.8rem; color:#fdfbf7; opacity:0.9;">${product.desc}</p>
+          </div>
+        </div>
+        <div style="display:flex; gap:0.75rem; flex-wrap:wrap; margin-top:1.5rem; padding-top:1rem; border-top:1px solid var(--color-border);">
+          <button class="btn-primary" onclick="addToSimulatedCart('${product.id}'); closeProductModal(); toggleCartDrawer();" style="flex:1; padding:0.75rem 1rem;">+ Add to Bridal Bag</button>
+          <a href="https://wa.me/916267686575?text=${encodeURIComponent('Namaste Lakshmi Saree Sansar, I am inquiring about ' + product.title + ' (' + product.price + ') at Shraja Mall, Burhar')}" target="_blank" class="btn-wa-card" style="padding:0.75rem 1.2rem; font-size:1rem; text-decoration:none;" title="Inquire on WhatsApp">💬 WhatsApp Stylist</a>
+        </div>
+      </div>
+    `;
+  }
 
   const modal = document.getElementById('product-modal');
-  modal.style.display = 'flex';
-  document.body.style.overflow = 'hidden';
+  if (modal) {
+    modal.classList.add('active');
+    modal.setAttribute('aria-hidden', 'false');
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
 }
 
 function closeProductModal() {
   const modal = document.getElementById('product-modal');
   if (modal) {
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden', 'true');
     modal.style.display = 'none';
     document.body.style.overflow = '';
   }
@@ -113,7 +199,7 @@ window.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     closeProductModal();
     const cart = document.getElementById('cart-drawer');
-    if (cart && cart.classList.contains('open')) {
+    if (cart && (cart.classList.contains('active') || cart.classList.contains('open'))) {
       toggleCartDrawer();
     }
   }
@@ -123,7 +209,10 @@ window.addEventListener('keydown', (e) => {
 function toggleCartDrawer() {
   const drawer = document.getElementById('cart-drawer');
   if (drawer) {
+    drawer.classList.toggle('active');
     drawer.classList.toggle('open');
+    const isHidden = drawer.getAttribute('aria-hidden') === 'true';
+    drawer.setAttribute('aria-hidden', isHidden ? 'false' : 'true');
   }
 }
 
@@ -135,27 +224,8 @@ function addToSimulatedCart(productId) {
   simulatedCart.push(product);
   updateCartUI();
   
-  // Quick visual feedback
-  const bagBtn = document.querySelector(`.saree-card[data-id="${productId}"] .btn-card-bag`);
-  if (bagBtn) {
-    const orig = bagBtn.innerHTML;
-    bagBtn.innerHTML = '✓';
-    bagBtn.style.background = '#d4af37';
-    bagBtn.style.color = '#000';
-    setTimeout(() => {
-      bagBtn.innerHTML = orig;
-      bagBtn.style.background = '';
-      bagBtn.style.color = '';
-    }, 1000);
-  }
-}
-
-function addCurrentToBag() {
-  if (currentModalProductId) {
-    addToSimulatedCart(currentModalProductId);
-    closeProductModal();
-    toggleCartDrawer();
-  }
+  // Provide quick feedback & open drawer
+  toggleCartDrawer();
 }
 
 function removeFromCart(index) {
@@ -164,25 +234,36 @@ function removeFromCart(index) {
 }
 
 function updateCartUI() {
-  const countBadge = document.getElementById('bag-count');
+  const count = simulatedCart.length;
+  
+  const headerCount = document.getElementById('header-bag-count');
+  const bagCount = document.getElementById('bag-count');
+  const cartCount = document.getElementById('cart-count');
   const drawerCount = document.getElementById('drawer-count');
+  
+  if (headerCount) headerCount.textContent = count;
+  if (bagCount) bagCount.textContent = count;
+  if (cartCount) cartCount.textContent = count;
+  if (drawerCount) drawerCount.textContent = `${count} item${count === 1 ? '' : 's'}`;
+
   const container = document.getElementById('cart-items-container');
-  const subtotalElem = document.getElementById('drawer-subtotal');
+  const footer = document.getElementById('cart-footer');
+  const totalAmount = document.getElementById('cart-total-amount');
+  const drawerSubtotal = document.getElementById('drawer-subtotal');
 
-  if (countBadge) countBadge.textContent = simulatedCart.length;
-  if (drawerCount) drawerCount.textContent = `${simulatedCart.length} item${simulatedCart.length === 1 ? '' : 's'}`;
-
-  if (simulatedCart.length === 0) {
+  if (count === 0) {
     if (container) {
       container.innerHTML = `
-        <div class="empty-cart-state" id="empty-cart-msg">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-          <p>Your bag is currently empty.</p>
-          <a href="#new-arrivals" class="btn btn-outline-dark btn-sm" onclick="toggleCartDrawer()">Discover Sarees</a>
+        <div class="cart-empty-state">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin:0 auto 1rem; display:block; color:var(--color-gold);"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <p>Your bridal trousseau bag is currently empty.</p>
+          <a href="collections.html" class="btn-primary" style="margin-top:1.5rem; display:inline-block;" onclick="toggleCartDrawer()">Explore Master Treasury &rarr;</a>
         </div>
       `;
     }
-    if (subtotalElem) subtotalElem.textContent = 'Rs. 0';
+    if (footer) footer.style.display = 'none';
+    if (totalAmount) totalAmount.textContent = 'Rs. 0';
+    if (drawerSubtotal) drawerSubtotal.textContent = 'Rs. 0';
     return;
   }
 
@@ -190,7 +271,6 @@ function updateCartUI() {
   let itemsHtml = '';
 
   simulatedCart.forEach((item, idx) => {
-    // Extract numerical price for subtotal estimation
     const num = parseInt(item.price.replace(/[^0-9]/g, '')) || 0;
     totalNum += num;
 
@@ -201,14 +281,17 @@ function updateCartUI() {
           <h4 class="cart-item-title">${item.title}</h4>
           <span class="cart-item-price">${item.price}</span>
           <br>
-          <button class="cart-remove-btn" onclick="removeFromCart(${idx})">Remove from bag</button>
+          <button class="cart-remove-btn" onclick="removeFromCart(${idx})">✕ Remove from Bag</button>
         </div>
       </div>
     `;
   });
 
   if (container) container.innerHTML = itemsHtml;
-  if (subtotalElem) subtotalElem.textContent = `Rs. ${totalNum.toLocaleString('en-IN')}`;
+  if (footer) footer.style.display = 'block';
+  const formattedTotal = `Rs. ${totalNum.toLocaleString('en-IN')}`;
+  if (totalAmount) totalAmount.textContent = formattedTotal;
+  if (drawerSubtotal) drawerSubtotal.textContent = formattedTotal;
 }
 
 function triggerSimulatedCheckout() {
@@ -217,22 +300,12 @@ function triggerSimulatedCheckout() {
     return;
   }
 
-  const itemsList = simulatedCart.map(i => `• ${i.title} (${i.price})`).join('\\n');
-  const phone = window.SHIV_PHONE || "916267686575";
-  const msg = `Namaste Lakshmi Saree Sansar, I saw the demo website created by SHIV. I have curated the following sarees in my bag:\\n\\n${itemsList}\\n\\nI would like to inquire about their availability and arrange an in-store drape trial at Shraja Mall, Burhar.`;
+  const itemsList = simulatedCart.map(i => `• ${i.title} (${i.price})`).join('\n');
+  const phone = "916267686575";
+  const msg = `Namaste Lakshmi Saree Sansar, I saw the demo website created by SHIV.\nI have curated the following sarees in my bag:\n\n${itemsList}\n\nI would like to inquire about their availability and arrange an in-store drape trial at Shraja Mall, Burhar.`;
   
   const waUrl = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
-  
-  const confirmed = confirm(
-    "⚡ DEMO CHECKOUT SPECIMEN\\n\\n" +
-    "This is an independent portfolio showcase built by SHIV Web Studio.\\n" +
-    "No real monetary charges are processed on this website.\\n\\n" +
-    "Would you like to forward this simulated bag to WhatsApp (+91 6267686575) to connect with the developer?"
-  );
-
-  if (confirmed) {
-    window.open(waUrl, '_blank');
-  }
+  window.open(waUrl, '_blank');
 }
 
 // 6. Appointment Booking Form Handler
@@ -243,19 +316,18 @@ function handleAppointmentSubmit(event) {
   const phone = document.getElementById('app-phone').value.trim();
   const date = document.getElementById('app-date').value;
   const occasion = document.getElementById('app-occasion').value;
-  const notes = document.getElementById('app-notes').value.trim();
+  const notes = document.getElementById('app-notes') ? document.getElementById('app-notes').value.trim() : '';
 
-  let msg = `*VIP Drape Appointment Booking — Lakshmi Saree Sansar*\\n`;
-  msg += `(Inquiry via SHIV Demo Website)\\n\\n`;
-  msg += `👤 *Client Name:* ${name}\\n`;
-  msg += `📞 *WhatsApp:* ${phone}\\n`;
-  msg += `📅 *Date of Visit:* ${date || 'Flexible / Walk-in'}\\n`;
-  msg += `✨ *Occasion:* ${occasion}\\n`;
-  if (notes) msg += `📝 *Notes/Preferences:* ${notes}\\n\\n`;
+  let msg = `*VIP Drape Appointment Booking — Lakshmi Saree Sansar*\n`;
+  msg += `(Inquiry via SHIV Demo Website)\n\n`;
+  msg += `👤 *Client Name:* ${name}\n`;
+  msg += `📞 *WhatsApp:* ${phone}\n`;
+  msg += `📅 *Date of Visit:* ${date || 'Flexible / Walk-in'}\n`;
+  msg += `✨ *Occasion:* ${occasion}\n`;
+  if (notes) msg += `📝 *Notes/Preferences:* ${notes}\n\n`;
   msg += `_I saw the demo website of Lakshmi Saree Sansar, I want to know the details of websites made by SHIV._`;
 
-  const devPhone = window.SHIV_PHONE || "916267686575";
-  const waUrl = `https://wa.me/${devPhone}?text=${encodeURIComponent(msg)}`;
+  const waUrl = `https://wa.me/916267686575?text=${encodeURIComponent(msg)}`;
 
   const msgBox = document.getElementById('form-msg');
   if (msgBox) {
@@ -268,10 +340,7 @@ function handleAppointmentSubmit(event) {
   }, 700);
 }
 
-// ==========================================================================
-// VIP 9-Page Flagship Interactive Controllers
-// ==========================================================================
-
+// 7. VIP 9-Page Flagship Interactive Controllers
 let currentTryonTone = 'Fair / Rose Porcelain';
 let currentTryonSareeName = 'Imperial Shahi Banarasi Katan Silk';
 let currentTryonSareePrice = 'Rs. 18,500';
@@ -279,7 +348,7 @@ let currentTryonStyle = 'Classic Pleated Nivi Drape';
 
 function setMannequinTone(hex, label, btn) {
   document.querySelectorAll('.tone-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
+  if (btn) btn.classList.add('active');
   currentTryonTone = label;
   
   const face = document.getElementById('svg-face');
@@ -292,7 +361,7 @@ function setMannequinTone(hex, label, btn) {
 
 function selectTryonSaree(id, skirtHex, zariHex, name, price, el) {
   document.querySelectorAll('.fabric-opt').forEach(opt => opt.classList.remove('active'));
-  el.classList.add('active');
+  if (el) el.classList.add('active');
   
   currentTryonSareeName = name;
   currentTryonSareePrice = price;
@@ -310,7 +379,7 @@ function selectTryonSaree(id, skirtHex, zariHex, name, price, el) {
 
 function setDrapeStyle(styleKey, styleLabel, btn) {
   document.querySelectorAll('.drape-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
+  if (btn) btn.classList.add('active');
   currentTryonStyle = styleLabel;
   
   const pallu = document.getElementById('svg-pallu');
@@ -338,15 +407,16 @@ function updateTryonSummary() {
 }
 
 function orderCurrentTryonLook() {
-  const msg = encodeURIComponent(`Namaste Lakshmi Saree Sansar, I simulated a custom look on your AI Try-on Studio:
+  const msg = encodeURIComponent(`Namaste Lakshmi Saree Sansar,
+I simulated a custom drape on your AI Virtual Studio:
 - Saree: ${currentTryonSareeName} (${currentTryonSareePrice})
 - Style: ${currentTryonStyle}
 - Complexion: ${currentTryonTone}
-Please confirm availability and booking for an in-store trial at Shraja Mall.`);
+Please arrange a physical drape trial at your Shraja Mall boutique in Burhar.`);
   window.open(`https://wa.me/916267686575?text=${msg}`, '_blank');
 }
 
-// Custom Atelier Calculation
+// 8. Custom Atelier Calculation
 function calculateCustomPrice() {
   const fabricSelect = document.getElementById('custom-fabric');
   const zariSelect = document.getElementById('custom-zari');
@@ -379,11 +449,11 @@ function calculateCustomPrice() {
 function submitCustomWeave() {
   const name = document.getElementById('client-name').value;
   const phone = document.getElementById('client-phone').value;
-  const fab = document.getElementById('sum-fabric').textContent;
-  const zar = document.getElementById('sum-zari').textContent;
-  const mot = document.getElementById('sum-motif').textContent;
-  const mono = document.getElementById('sum-monogram').textContent;
-  const total = document.getElementById('custom-total-display').textContent;
+  const fab = document.getElementById('sum-fabric') ? document.getElementById('sum-fabric').textContent : '';
+  const zar = document.getElementById('sum-zari') ? document.getElementById('sum-zari').textContent : '';
+  const mot = document.getElementById('sum-motif') ? document.getElementById('sum-motif').textContent : '';
+  const mono = document.getElementById('sum-monogram') ? document.getElementById('sum-monogram').textContent : '';
+  const total = document.getElementById('custom-total-display') ? document.getElementById('custom-total-display').textContent : '';
   
   const msg = encodeURIComponent(`Namaste Master Weaver at Lakshmi Saree Sansar,
 I configured a Custom Bespoke Weave:
@@ -433,3 +503,18 @@ Inquiry sent via official store portal.`);
 
   window.open(`https://wa.me/916267686575?text=${msg}`, '_blank');
 }
+
+// 9. Auto-initialization
+window.addEventListener('DOMContentLoaded', () => {
+  setTimeout(dismissFabricReveal, 800);
+  
+  if (document.getElementById('custom-fabric')) {
+    calculateCustomPrice();
+  }
+  
+  if (document.getElementById('svg-face')) {
+    updateTryonSummary();
+  }
+  
+  updateCartUI();
+});

@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- URL Normalization to prevent subfolder 404 on assets -->
+  <script>
+    (function(){
+      var p = window.location.pathname;
+      var subpages = ['collections','bridal-studio','virtual-tryon','lookbook','custom-couture','heritage','vip-appointment','contact','catalog','calculator','gallery','concierge','bespoke'];
+      for (var i = 0; i < subpages.length; i++) {
+        if (p.endsWith('/' + subpages[i] + '/')) {
+          window.location.replace(p.slice(0, -1) + '.html' + window.location.search + window.location.hash);
+          break;
+        }
+      }
+    })();
+  </script>
+
   <meta charset="UTF-8">
   <title>Private VIP Concierge & Viewing — Hotel Vilasa International</title>
   <meta name="google-site-verification" content="29XGiGGVrfl2Ff3y75voxCAikcCRNu1KlOur1tK6iuM" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" onerror="if(!this.href.endsWith('../styles.css')){this.href='../styles.css';}">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>

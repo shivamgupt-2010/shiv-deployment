@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- URL Normalization to prevent subfolder 404 on assets -->
+  <script>
+    (function(){
+      var p = window.location.pathname;
+      var subpages = ['collections','bridal-studio','virtual-tryon','lookbook','custom-couture','heritage','vip-appointment','contact','catalog','calculator','gallery','concierge','bespoke'];
+      for (var i = 0; i < subpages.length; i++) {
+        if (p.endsWith('/' + subpages[i] + '/')) {
+          window.location.replace(p.slice(0, -1) + '.html' + window.location.search + window.location.hash);
+          break;
+        }
+      }
+    })();
+    window.addEventListener("DOMContentLoaded", calcTotal);
+</script>
+
   <meta charset="UTF-8">
   <title>Live Price & Package Calculator — Shri Balaji Jewellers</title>
   <meta name="google-site-verification" content="29XGiGGVrfl2Ff3y75voxCAikcCRNu1KlOur1tK6iuM" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" onerror="if(!this.href.endsWith('../styles.css')){this.href='../styles.css';}">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Playfair+Display,+serif&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -103,7 +118,8 @@
 - Calculated Total: ${total}`);
       window.open(`https://wa.me/916267686575?text=${msg}`, '_blank');
     }
-  </script>
+    window.addEventListener("DOMContentLoaded", calcTotal);
+</script>
   
   <footer class="site-footer">
     <div class="container footer-grid">
@@ -146,7 +162,8 @@
       const m = document.getElementById('mid-mobile-menu');
       if (m) m.classList.toggle('active');
     }
-  </script>
+    window.addEventListener("DOMContentLoaded", calcTotal);
+</script>
         
 </body>
 </html>
